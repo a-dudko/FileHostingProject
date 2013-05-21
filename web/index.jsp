@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Welcome to our file hosting service</h1>
+    <a href="${pageContext.servletContext.contextPath}/registration">Registrate</a>
 
 </body>
 </html>
