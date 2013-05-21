@@ -7,7 +7,6 @@
 </head>
 <body>
     <h1>Welcome to our file hosting service</h1>
-    <c:url value="${pageContext.servletContext.contextPath}/registration" var = "registrationUrl"/>
-    <a href="${registrationUrl}">Registration</a>
+
 </body>
 </html>
