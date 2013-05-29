@@ -12,11 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
+import java.util.Random;
 
 @MultipartConfig
 public class UploadFileServlet extends HttpServlet {
+    private final static int BUFFER_SIZE = 2048;
+
     private FileBC fileBC = new FileBC();
 
     @Override
@@ -27,34 +29,29 @@ public class UploadFileServlet extends HttpServlet {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/addFile.jsp");
             dispatcher.forward(request, response);
         }
-
-        Collection<Part> parts = request.getParts();
-
-        String fileName = getFileName((Part)parts.toArray()[0]);
-        FileWriter fileWriter = new FileWriter(fileName);
-        BufferedWriter writer = new BufferedWriter(fileWriter);
-
-        for (Part part : parts) {
-            String partContent = getPartContent(part);
-            writer.write(partContent);
-        }
-        writer.flush();
-        writer.close();
-
-        fileBC.addFile(makeFile(request,fileName));
-
-        response.getOutputStream().println("<html><body>The file has been uploaded</body></html>");
+        String fileName = createFile(request.getPart("file"));
+        fileBC.addFile(makeFileObject(request, fileName));
+        response.getOutputStream().println("<html><body>The file has been successfully uploaded</body></html>");
     }
 
-    private String readAsString(InputStream stream) throws IOException {
-        String result = "";
-        InputStreamReader inputReader = new InputStreamReader(stream);
-        BufferedReader reader = new BufferedReader(inputReader);
-        while (reader.ready()) {
-            result += reader.readLine();
-        }
+    private String createFile(Part filePart) throws IOException, ServletException {
+        String fileName = getFileName(filePart);
+        InputStream inputStream = filePart.getInputStream();
+        OutputStream outputStream = new FileOutputStream(fileName);
+        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream);
+        loadFileContent(inputStream, bufferedOutputStream);
+        bufferedOutputStream.close();
+        return fileName;
+    }
 
-        return result;
+    private void loadFileContent(InputStream inputStream, BufferedOutputStream bufferedOutputStream) throws IOException {
+        byte[] buffer = new byte[BUFFER_SIZE];
+        int bytesRead = inputStream.read(buffer);
+        while (bytesRead > 0) {
+            bufferedOutputStream.write(buffer, 0, bytesRead);
+            bytesRead = inputStream.read(buffer);
+        }
+        bufferedOutputStream.flush();
     }
 
     private String getFileName(Part part) {
@@ -69,21 +66,13 @@ public class UploadFileServlet extends HttpServlet {
         return null;
     }
 
-    private String getPartContent(Part part) throws IOException {
-        String contentType = part.getContentType();
-        System.out.println("contentType = " + contentType);
-        System.out.println("file = " + getFileName(part));
-        InputStream stream = part.getInputStream();
-        String content = readAsString(stream);
-        return content;
-    }
-
-    private File makeFile(HttpServletRequest request, String fileName) {
+    private File makeFileObject(HttpServletRequest request, String fileName) {
         File file = new File();
         file.setDescription(request.getParameter("fileDescription"));
         file.setAuthor(request.getParameter("fileAuthor"));
         file.setNotes(request.getParameter("fileNotes"));
         file.setFileName(fileName);
+        file.setRemoveCode(Integer.toString(fileName.hashCode()));
         return file;
     }
 
