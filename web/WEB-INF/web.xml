@@ -6,11 +6,11 @@
            version="2.5">
     <servlet>
         <servlet-name>uploadFileServlet</servlet-name>
-        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.FileAddingServlet</servlet-class>
+        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.UploadFileServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>uploadFileServlet</servlet-name>
-        <url-pattern>/add/*</url-pattern>
+        <url-pattern>/file/upload</url-pattern>
     </servlet-mapping>
 
     <error-page>

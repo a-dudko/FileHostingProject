@@ -25,6 +25,9 @@
         <module name="FileHostingProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="FileHostingProject" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
