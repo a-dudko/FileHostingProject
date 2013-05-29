@@ -13,6 +13,15 @@
         <url-pattern>/file/upload</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>downloadFileServlet</servlet-name>
+        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.DownloadFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>downloadFileServlet</servlet-name>
+        <url-pattern>/file/download/*</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/notFound.jsp</location>

@@ -24,14 +24,19 @@ public class UploadFileServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<String> messages = getRequestErrors(request);
+        String jspToForward;
         if (messages.size() != 0) {
             request.setAttribute("messages",messages);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/addFile.jsp");
-            dispatcher.forward(request, response);
+            jspToForward = "/addFile.jsp";
         }
-        String fileName = createFile(request.getPart("file"));
-        fileBC.addFile(makeFileObject(request, fileName));
-        response.getOutputStream().println("<html><body>The file has been successfully uploaded</body></html>");
+        else {
+            File file = makeFileObject(request, createFile(request.getPart("file")));
+            fileBC.addFile(file);
+            updateRequest(request,file);
+            jspToForward = "/successfulUpload.jsp";
+        }
+        RequestDispatcher dispatcher = request.getRequestDispatcher(jspToForward);
+        dispatcher.forward(request, response);
     }
 
     private String createFile(Part filePart) throws IOException, ServletException {
@@ -64,6 +69,11 @@ public class UploadFileServlet extends HttpServlet {
         }
 
         return null;
+    }
+
+    private void updateRequest(HttpServletRequest request, File file) {
+        request.setAttribute("fileID", file.getId());
+        request.setAttribute("removeCode", file.getRemoveCode());
     }
 
     private File makeFileObject(HttpServletRequest request, String fileName) {
