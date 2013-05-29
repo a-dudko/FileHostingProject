@@ -80,22 +80,22 @@ public class UploadFileServlet extends HttpServlet {
 
     private File makeFile(HttpServletRequest request, String fileName) {
         File file = new File();
-        file.setDescription(request.getParameter("description"));
-        file.setAuthor(request.getParameter("author"));
-        file.setNotes(request.getParameter("notes"));
+        file.setDescription(request.getParameter("fileDescription"));
+        file.setAuthor(request.getParameter("fileAuthor"));
+        file.setNotes(request.getParameter("fileNotes"));
         file.setFileName(fileName);
         return file;
     }
 
     private List<String> getRequestErrors(HttpServletRequest request) {
         List<String> errors = new ArrayList<>();
-        if ("".equals(request.getParameter("description"))) {
+        if ("".equals(request.getParameter("fileDescription"))) {
             errors.add("Description field should not be empty");
         }
-        if ("".equals(request.getParameter("author"))) {
+        if ("".equals(request.getParameter("fileAuthor"))) {
             errors.add("Author field should not be empty");
         }
-        if ("".equals(request.getParameter("notes"))) {
+        if ("".equals(request.getParameter("fileNotes"))) {
             errors.add("Notes field should not be empty");
         }
         if ("".equals(request.getParameter("file"))) {

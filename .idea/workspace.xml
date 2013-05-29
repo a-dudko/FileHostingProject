@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c266a933-97ad-430d-bc3b-0dbc26dd155f" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\.idea\artifacts\FileHostingProject_Web_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\hibernate-commons-annotations-4.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\hibernate-core-4.1.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javassist-3.15.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.annotation.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.ejb.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.jms.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.persistence.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.resource.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.servlet.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.servlet.jsp.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\javax.transaction.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\jboss-logging-3.1.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\lib\jboss-transaction-api_1.1_spec-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\classes\by\bsu\fpmi\second\dudkoAA\RequestParams.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\classes\by\bsu\fpmi\second\dudkoAA\servlet\FileAddingServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\antlr-2.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\hibernate-commons-annotations-4.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\hibernate-core-4.1.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\javassist-3.15.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\jboss-logging-3.1.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\jboss-transaction-api_1.1_spec-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\WEB-INF\web.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\addFile.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\out\artifacts\FileHostingProject_Web_exploded\notFound.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FileHostingProject.iml" afterPath="$PROJECT_DIR$/FileHostingProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/addFile.jsp" afterPath="$PROJECT_DIR$/web/addFile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/hibernate.properties" afterPath="$PROJECT_DIR$/resources/hibernate.properties" />
     </list>
     <ignored path="FileHostingProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,6 +55,20 @@
   <component name="DebuggerManager">
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java" line="17" class="by.bsu.fpmi.second.dudkoAA.HibernateUtil" package="by.bsu.fpmi.second.dudkoAA">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java" line="52" class="by.bsu.fpmi.second.dudkoAA.HibernateUtil" package="by.bsu.fpmi.second.dudkoAA">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -178,10 +154,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadFileServlet.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UploadFileServlet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+            <state line="23" column="23" selection-start="806" selection-end="806" vertical-scroll-proportion="0.32629558">
               <folding />
             </state>
           </provider>
@@ -190,7 +166,7 @@
       <file leaf-file-name="FileDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="42" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -199,16 +175,16 @@
       <file leaf-file-name="FileBC.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateUtil.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HibernateUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="468" selection-end="468" vertical-scroll-proportion="0.3915547">
+            <state line="41" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,6 +196,15 @@
         <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="40" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hibernate.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/hibernate.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="43" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -243,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/FileAddingServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/resources/upload-form-validation.js" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/registration.jsp" />
@@ -257,8 +241,9 @@
         <option value="$PROJECT_DIR$/src/hibernate.properties" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/resources/hibernate.properties" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
       </list>
     </option>
   </component>
@@ -764,8 +749,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -773,7 +758,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.6735043" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33301798" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33162394" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -784,9 +769,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5017065" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19423369" sideWeight="0.51965815" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19423369" sideWeight="0.6683761" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21699545" sideWeight="0.51965815" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21699545" sideWeight="0.6683761" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48034188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -884,7 +869,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" />
+        <state line="7" column="6" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/scripts/upload-form-validation.js">
@@ -904,18 +891,6 @@
         <state line="24" column="25" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="42" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/hibernate.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="258" selection-end="258" vertical-scroll-proportion="0.072744906" />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.2.2.Final/hibernate-core-4.2.2.Final.jar!/org/hibernate/cfg/Configuration.class">
@@ -939,16 +914,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+        <state line="86" column="36" selection-start="2953" selection-end="2953" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -960,19 +928,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/resources/hibernate.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="36" selection-start="2953" selection-end="2953" vertical-scroll-proportion="0.0">
+        <state line="6" column="43" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="468" selection-end="468" vertical-scroll-proportion="0.3915547">
+        <state line="41" column="0" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="23" selection-start="806" selection-end="806" vertical-scroll-proportion="0.32629558">
+          <folding />
         </state>
       </provider>
     </entry>
