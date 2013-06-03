@@ -19,7 +19,13 @@ import java.util.Random;
 public class UploadFileServlet extends HttpServlet {
     private final static int BUFFER_SIZE = 2048;
 
+    private String filePath;
+
     private FileBC fileBC = new FileBC();
+
+    public void init() {
+        filePath = "C:" + java.io.File.separator + "Temp";
+    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -40,10 +46,11 @@ public class UploadFileServlet extends HttpServlet {
     }
 
     private String createFile(Part filePart) throws IOException, ServletException {
-        String fileName = getFileName(filePart);
         InputStream inputStream = filePart.getInputStream();
-        OutputStream outputStream = new FileOutputStream(fileName);
-        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(outputStream);
+        String fileName = getFileName(filePart);
+        java.io.File file = new java.io.File(filePath + java.io.File.separator + fileName);
+        file.getParentFile().mkdirs();
+        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(file));
         loadFileContent(inputStream, bufferedOutputStream);
         bufferedOutputStream.close();
         return fileName;
@@ -67,7 +74,6 @@ public class UploadFileServlet extends HttpServlet {
                 return value.replace("\"", "");
             }
         }
-
         return null;
     }
 

@@ -2,6 +2,7 @@ package by.bsu.fpmi.second.dudkoAA.service;
 
 import by.bsu.fpmi.second.dudkoAA.dao.FileDAO;
 import by.bsu.fpmi.second.dudkoAA.model.File;
+import org.hibernate.ObjectNotFoundException;
 
 import java.util.List;
 

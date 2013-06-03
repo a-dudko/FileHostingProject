@@ -31,5 +31,6 @@
         <button type="button" onclick="submitForm();">Upload</button>
         <button type="submit">Cancel</button>
     </form>
+    <a href="index.jsp">Main Page</a>
 </body>
 </html>

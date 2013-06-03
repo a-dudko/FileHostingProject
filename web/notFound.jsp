@@ -6,6 +6,9 @@
     <title>404 error</title>
 </head>
 <body>
+    <div id="messages" style="color: red;">
+        ${message} <br/>
+    </div>
     You've requested not existed url. Got 404 error
 </body>
 </html>

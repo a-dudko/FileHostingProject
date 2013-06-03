@@ -2,6 +2,7 @@ package by.bsu.fpmi.second.dudkoAA.dao;
 
 import by.bsu.fpmi.second.dudkoAA.HibernateUtil;
 import by.bsu.fpmi.second.dudkoAA.model.File;
+import org.hibernate.ObjectNotFoundException;
 import org.hibernate.Session;
 
 import java.util.List;
@@ -28,10 +29,9 @@ public class FileDAO {
     }
 
     public File read(Integer id) {
-        // TODO Auto-generated method stub
         Session session = this.getSession();
         HibernateUtil.beginTransaction();
-        return (File)session.load(File.class, id);
+        return (File)session.get(File.class, id);
     }
 
     public void update(File item) {
