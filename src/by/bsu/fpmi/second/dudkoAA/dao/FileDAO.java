@@ -31,7 +31,9 @@ public class FileDAO {
     public File read(Integer id) {
         Session session = this.getSession();
         HibernateUtil.beginTransaction();
-        return (File)session.get(File.class, id);
+        File file = (File)session.get(File.class, id);
+        HibernateUtil.commitTransaction();
+        return file;
     }
 
     public void update(File item) {

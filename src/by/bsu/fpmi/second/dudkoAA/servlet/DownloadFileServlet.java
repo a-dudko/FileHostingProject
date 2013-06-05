@@ -2,6 +2,7 @@ package by.bsu.fpmi.second.dudkoAA.servlet;
 
 
 
+import by.bsu.fpmi.second.dudkoAA.model.File;
 import by.bsu.fpmi.second.dudkoAA.service.FileBC;
 
 import javax.servlet.RequestDispatcher;
@@ -11,7 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.DataInputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -31,20 +31,47 @@ public class DownloadFileServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException {
-        by.bsu.fpmi.second.dudkoAA.model.File fileFromDB = getFileFromDB(request.getRequestURI());
+        File fileFromDB = getFileFromDB(request.getRequestURI());
         if (fileFromDB == null) {
-            request.setAttribute("message", "Not valid URI");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/notFound.jsp");
-            dispatcher.forward(request, response);
+            wrongURIForward(request, response);
         }
         else {
-            File file = new File(filePath + File.separator + fileFromDB.getFileName());
-            updateResponseParams(response, file);
-            downloadFile(response, file);
+            if ("remove".equals(request.getParameter("op"))) {
+                removeFile(request, response, fileFromDB);
+            }
+            else {
+                downloadFile(response, fileFromDB);
+            }
         }
     }
 
-    private void downloadFile(HttpServletResponse response, File file) throws IOException {
+    private void downloadFile(HttpServletResponse response, File fileFromDB) throws IOException {
+        java.io.File file = new java.io.File(filePath + java.io.File.separator + fileFromDB.getFileName());
+        updateResponseParams(response, file);
+        downloadFile(response, file);
+    }
+
+    private void removeFile(HttpServletRequest request, HttpServletResponse response,
+                            File fileFromDB) throws IOException, ServletException {
+        String currentFileRemoveCode = fileFromDB.getRemoveCode().toString();
+        String requestRemoveCode = request.getParameter("removecode");
+        if (currentFileRemoveCode.equals(requestRemoveCode)) {
+            fileBC.removeFile(fileFromDB);
+            response.getOutputStream().println("<html><body>The file has been removed</body></html>");
+        }
+        else {
+            wrongURIForward(request,response);
+        }
+    }
+
+    private void wrongURIForward(HttpServletRequest request,
+                                 HttpServletResponse response) throws ServletException, IOException {
+        request.setAttribute("message", "Not valid URI");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/notFound.jsp");
+        dispatcher.forward(request, response);
+    }
+
+    private void downloadFile(HttpServletResponse response, java.io.File file) throws IOException {
         DataInputStream in = new DataInputStream(new FileInputStream(file));
         ServletOutputStream outStream = response.getOutputStream();
         downloadFileContent(in, outStream);
@@ -52,7 +79,7 @@ public class DownloadFileServlet extends HttpServlet {
         outStream.close();
     }
 
-    private by.bsu.fpmi.second.dudkoAA.model.File getFileFromDB(String requestURI) {
+    private File getFileFromDB(String requestURI) {
         String[] URIParts = requestURI.split("/");
         int i = 0;
         while (!URIParts[i].matches("id[0-9]*") && ++i < URIParts.length) {
