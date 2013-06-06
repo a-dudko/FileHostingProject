@@ -21,7 +21,7 @@ public class UploadFileServlet extends HttpServlet {
 
     private String filePath;
 
-    private FileBC fileBC = new FileBC();
+    private FileBC fileBC = FileBC.getInstance();
 
     public void init() {
         filePath = "C:" + java.io.File.separator + "Temp";

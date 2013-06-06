@@ -1,29 +1,28 @@
 package by.bsu.fpmi.second.dudkoAA.dao;
 
 import by.bsu.fpmi.second.dudkoAA.HibernateUtil;
-import by.bsu.fpmi.second.dudkoAA.model.File;
-import org.hibernate.ObjectNotFoundException;
+import by.bsu.fpmi.second.dudkoAA.model.SiteAdministrator;
 import org.hibernate.Session;
 
 import java.util.List;
 
-public class FileDAO {
+public class SiteAdministratorDAO {
 
-    private static FileDAO instance;
+    private static SiteAdministratorDAO instance;
 
-    public static FileDAO getInstance() {
+    public static SiteAdministratorDAO getInstance() {
         if (instance == null) {
-            instance = new FileDAO();
+            instance = new SiteAdministratorDAO();
         }
         return instance;
     }
 
-    public void add(File file) {
+    public void add(SiteAdministrator administrator) {
         // TODO Auto-generated method stub
         try {
             Session session = this.getSession();
             HibernateUtil.beginTransaction();
-            session.saveOrUpdate(file);
+            session.saveOrUpdate(administrator);
             HibernateUtil.commitTransaction();
         } catch (Exception e) {
             // TODO: handle exception
@@ -31,22 +30,24 @@ public class FileDAO {
         }
     }
 
-    public List<File> readAll() {
+    public List<SiteAdministrator> readAll() {
         // TODO Auto-generated method stub
         Session session = this.getSession();
         HibernateUtil.beginTransaction();
-        return session.createQuery("from " + File.class).list();
+        List<SiteAdministrator> administrators = session.createQuery("from " + SiteAdministrator.class).list();
+        HibernateUtil.commitTransaction();
+        return administrators;
     }
 
-    public File read(Integer id) {
+    public SiteAdministrator read(Integer id) {
         Session session = this.getSession();
         HibernateUtil.beginTransaction();
-        File file = (File)session.get(File.class, id);
+        SiteAdministrator administrator = (SiteAdministrator)session.get(SiteAdministrator.class, id);
         HibernateUtil.commitTransaction();
-        return file;
+        return administrator;
     }
 
-    public void update(File item) {
+    public void update(SiteAdministrator item) {
         // TODO Auto-generated method stub
         Session session = this.getSession();
         HibernateUtil.beginTransaction();
@@ -54,7 +55,7 @@ public class FileDAO {
         HibernateUtil.commitTransaction();
     }
 
-    public void remove(File item) {
+    public void remove(SiteAdministrator item) {
         // TODO Auto-generated method stub
         Session session = this.getSession();
         HibernateUtil.beginTransaction();
@@ -65,5 +66,4 @@ public class FileDAO {
     protected Session getSession() {
         return HibernateUtil.getSession();
     }
-
 }

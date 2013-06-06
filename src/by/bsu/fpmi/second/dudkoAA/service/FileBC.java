@@ -2,24 +2,32 @@ package by.bsu.fpmi.second.dudkoAA.service;
 
 import by.bsu.fpmi.second.dudkoAA.dao.FileDAO;
 import by.bsu.fpmi.second.dudkoAA.model.File;
-import org.hibernate.ObjectNotFoundException;
 
 import java.util.List;
 
 public class FileBC {
 
-    private FileDAO fileDAO = new FileDAO();
+    private FileDAO fileDAO = FileDAO.getInstance();
+
+    private static FileBC instance;
+
+    public static FileBC getInstance() {
+        if (instance == null) {
+            instance = new FileBC();
+        }
+        return instance;
+    }
 
     public void addFile(File file) {
         fileDAO.add(file);
     }
 
-    public List<File> getProfiles() {
+    public List<File> getFiles() {
         return fileDAO.readAll();
     }
 
     public int getCounts() {
-        List<File> profiles = getProfiles();
+        List<File> profiles = getFiles();
         if (profiles != null) {
             return profiles.size();
         }

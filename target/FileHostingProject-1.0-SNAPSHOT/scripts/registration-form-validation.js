@@ -30,22 +30,17 @@ function validateUserRegistrationForm() {
 
     var repeatPasswordElement = document.getElementById("repeatPassword");
     repeatPasswordElement.style.backgroundColor = "white";
-    if (repeatPasswordElement != passwordElement) {
+    if (repeatPasswordElement.value != passwordElement.value) {
         errorMessages.push("<br>Passwords should be equal");
         repeatPasswordElement.style.backgroundColor = "red";
     }
 
     var adminCodeElement = document.getElementById("adminCode");
     adminCodeElement.style.backgroundColor = "white";
-    if (loginElement.value.length < 6 || loginElement.value.length > 300) {
-        errorMessages.push("<br>Login length should be 6-300 symbols");
-        loginElement.style.backgroundColor = "red";
-    }
-    else
-        if (!adminCodeElement.value.match(/[a-zA-Z0-9]+/)) {
+    if (!adminCodeElement.value.match(/[a-zA-Z0-9]+/)) {
             errorMessages.push("<br>Admin code should consist of numbers and letters only");
             adminCodeElement.style.backgroundColor = "red";
-        }
+    }
 
     document.getElementById("messages").innerHTML = errorMessages;
     return errorMessages.length == 0;

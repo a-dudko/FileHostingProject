@@ -19,19 +19,19 @@
             <div class="main">
                 <div class="field">
                     <label for="login">Login</label>
-                    <input  type="text" id="login"  /><br>
+                    <input type="text" id="login" name="userLogin" /><br>
                 </div>
                 <div class="field">
                     <label for="password">Password</label>
-                    <input type="password" id="password"/><br>
+                    <input type="password" id="password" name="userPassword"/><br>
                 </div>
                 <div class="field">
                     <label for="repeatPassword">Repeat password</label>
-                    <input type="password" id="repeatPassword"/><br>
+                    <input type="password" id="repeatPassword" name="userRepPassword"/><br>
                 </div>
                 <div class="field">
                     <label for="adminCode">Admin code</label>
-                    <input type="password" id="adminCode"/><br>
+                    <input type="password" id="adminCode" name="adminCode"/><br>
                 </div>
             </div>
         </fieldset>
