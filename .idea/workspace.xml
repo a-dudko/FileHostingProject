@@ -3,19 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c266a933-97ad-430d-bc3b-0dbc26dd155f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/successfulUpload.jsp" afterPath="$PROJECT_DIR$/web/successfulUpload.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration.jsp" afterPath="$PROJECT_DIR$/web/registration.jsp" />
     </list>
     <ignored path="FileHostingProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369748151214" ignored="false" />
     <file path="/notFound.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370287412748" ignored="false" />
     <file path="/Jsp File.txt.ft" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369139175585" ignored="false" />
-    <file path="/index.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369218440965" ignored="false" />
+    <file path="/index.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370496423940" ignored="false" />
     <file path="$PROJECT_DIR$/../student/student.iml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369140970055" ignored="false" />
     <file path="/web.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369824831586" ignored="false" />
     <file path="/a.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369141275469" ignored="false" />
-    <file path="/Dummy.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370425066599" ignored="false" />
+    <file path="/Dummy.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370496223685" ignored="false" />
     <file path="$PROJECT_DIR$/../student/.idea/workspace.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369238361178" ignored="false" />
     <file path="/FileAddingServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369173994260" ignored="false" />
     <file path="/addFile.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370289467028" ignored="false" />
@@ -36,7 +36,7 @@
     <file path="/hibernate.cfg.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369726909157" ignored="false" />
     <file path="/a.dummy" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369747630608" ignored="false" />
     <file path="/successfullUpload.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369825164102" ignored="false" />
-    <file path="/DownloadFileServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370428520826" ignored="false" />
+    <file path="/DownloadFileServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370497332270" ignored="false" />
     <file path="$PROJECT_DIR$/../../Algorithms/src/Solution.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369855372007" ignored="false" />
     <file path="/Solution.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369854187989" ignored="false" />
     <file path="$PROJECT_DIR$/../../Algorithms/input.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369854222387" ignored="false" />
@@ -62,6 +62,8 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -96,8 +98,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -110,7 +110,16 @@
       <file leaf-file-name="addFile.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/addFile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="4" selection-start="1393" selection-end="1426" vertical-scroll-proportion="0.0">
+            <state line="10" column="57" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.5384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="72" selection-start="300" selection-end="300" vertical-scroll-proportion="-5.230769">
               <folding />
             </state>
           </provider>
@@ -119,7 +128,7 @@
       <file leaf-file-name="successfulUpload.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="75" selection-start="751" selection-end="751" vertical-scroll-proportion="-7.8461537">
+            <state line="13" column="44" selection-start="778" selection-end="814" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
@@ -127,11 +136,6 @@
       </file>
       <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="35" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
             <state />
           </provider>
@@ -140,6 +144,11 @@
           </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="50" selection-start="88" selection-end="89" vertical-scroll-proportion="-0.6296296">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -173,34 +182,25 @@
       <file leaf-file-name="UploadFileServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="57" selection-start="766" selection-end="804" vertical-scroll-proportion="0.0">
+            <state line="31" column="63" selection-start="958" selection-end="1008" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DownloadFileServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DownloadFileServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="45" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.76404494">
+            <state line="21" column="23" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filePage.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/filePage.jsp">
+      <file leaf-file-name="registration.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/registration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notFound.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/notFound.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+            <state line="0" column="64" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -224,8 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/hibernate.properties" />
-        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/resources/hibernate.properties" />
@@ -240,6 +238,8 @@
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java" />
         <option value="$PROJECT_DIR$/web/successfulUpload.jsp" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/registration.jsp" />
       </list>
     </option>
   </component>
@@ -352,7 +352,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -529,7 +529,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,9 +549,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -601,6 +601,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -627,19 +640,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -898,8 +898,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19347496" sideWeight="0.51965815" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.215478" sideWeight="0.51965815" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48034188" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.215478" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -971,18 +971,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/java/io/BufferedOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="19" selection-start="3055" selection-end="3089" vertical-scroll-proportion="0.13438736">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/java/io/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="59" selection-start="3246" selection-end="3246" vertical-scroll-proportion="0.20158103" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="26" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
@@ -1000,22 +988,6 @@
         <state line="36" column="1" selection-start="1452" selection-end="1452" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="35" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/notFound.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="24" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
@@ -1030,23 +1002,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/addFile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="4" selection-start="1393" selection-end="1426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/filePage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="234" selection-end="234" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="57" selection-start="766" selection-end="804" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1072,16 +1030,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="75" selection-start="751" selection-end="751" vertical-scroll-proportion="-7.8461537">
+        <state line="1" column="50" selection-start="88" selection-end="89" vertical-scroll-proportion="-0.6296296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="57" selection-start="390" selection-end="390" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="63" selection-start="958" selection-end="1008" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="45" selection-start="1067" selection-end="1067" vertical-scroll-proportion="0.76404494">
+        <state line="21" column="23" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="44" selection-start="778" selection-end="814" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="72" selection-start="300" selection-end="300" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="64" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

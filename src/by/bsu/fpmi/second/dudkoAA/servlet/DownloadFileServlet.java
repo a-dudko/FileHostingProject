@@ -33,19 +33,19 @@ public class DownloadFileServlet extends HttpServlet {
                          HttpServletResponse response) throws ServletException, IOException {
         File fileFromDB = getFileFromDB(request.getRequestURI());
         if (fileFromDB == null) {
-            wrongURIForward(request, response);
+            wrongURIForward(request, response, "No such file in DB");
         }
         else {
             if ("remove".equals(request.getParameter("op"))) {
                 removeFile(request, response, fileFromDB);
             }
             else {
-                downloadFile(response, fileFromDB);
+                createFile(response, fileFromDB);
             }
         }
     }
 
-    private void downloadFile(HttpServletResponse response, File fileFromDB) throws IOException {
+    private void createFile(HttpServletResponse response, File fileFromDB) throws IOException {
         java.io.File file = new java.io.File(filePath + java.io.File.separator + fileFromDB.getFileName());
         updateResponseParams(response, file);
         downloadFile(response, file);
@@ -60,14 +60,15 @@ public class DownloadFileServlet extends HttpServlet {
             response.getOutputStream().println("<html><body>The file has been removed</body></html>");
         }
         else {
-            wrongURIForward(request,response);
+            wrongURIForward(request,response,"Wrong remove code");
         }
     }
 
     private void wrongURIForward(HttpServletRequest request,
-                                 HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("message", "Not valid URI");
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/notFound.jsp");
+                                 HttpServletResponse response,
+                                 String errorMessage) throws ServletException, IOException {
+        request.setAttribute("message", errorMessage);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
     }
 
