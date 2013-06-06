@@ -22,6 +22,15 @@
         <url-pattern>/file/download/*</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>userRegistrationServlet</servlet-name>
+        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.UserRegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userRegistrationServlet</servlet-name>
+        <url-pattern>/registration/*</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/notFound.jsp</location>

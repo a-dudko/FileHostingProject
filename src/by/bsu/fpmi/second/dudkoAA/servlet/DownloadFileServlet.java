@@ -83,7 +83,7 @@ public class DownloadFileServlet extends HttpServlet {
     private File getFileFromDB(String requestURI) {
         String[] URIParts = requestURI.split("/");
         int i = 0;
-        while (!URIParts[i].matches("id[0-9]*") && ++i < URIParts.length) {
+        while (!URIParts[i].matches("id[0-9]+") && ++i < URIParts.length) {
 
         }
         if (i == URIParts.length) {
