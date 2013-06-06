@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c266a933-97ad-430d-bc3b-0dbc26dd155f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/addFile.jsp" afterPath="$PROJECT_DIR$/web/addFile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration.jsp" afterPath="$PROJECT_DIR$/web/registration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/successfulUpload.jsp" afterPath="$PROJECT_DIR$/web/successfulUpload.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FileHostingProject.iws" />
@@ -43,7 +40,7 @@
     <file path="/Solution.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369854187989" ignored="false" />
     <file path="$PROJECT_DIR$/../../Algorithms/input.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369854222387" ignored="false" />
     <file path="$PROJECT_DIR$/../../Algorithms/output.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369854223893" ignored="false" />
-    <file path="/successfulUpload.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370427699717" ignored="false" />
+    <file path="/successfulUpload.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370510230019" ignored="false" />
     <file path="/filePage.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370288188298" ignored="false" />
     <file path="/registration-form-validation.js" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370499518786" ignored="false" />
     <file path="/UserRegistrationServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370499634558" ignored="false" />
@@ -114,7 +111,16 @@
       <file leaf-file-name="addFile.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/addFile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="51" selection-start="940" selection-end="940" vertical-scroll-proportion="-3.6153846">
+            <state line="7" column="16" selection-start="325" selection-end="325" vertical-scroll-proportion="-2.6153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="successfulUpload.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="53" selection-start="786" selection-end="786" vertical-scroll-proportion="0.46850392">
               <folding />
             </state>
           </provider>
@@ -123,7 +129,7 @@
       <file leaf-file-name="registration-form-validation.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/scripts/registration-form-validation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="62" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
+            <state line="16" column="58" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,19 +144,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileBC.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileBC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UploadFileServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="123" selection-start="831" selection-end="949" vertical-scroll-proportion="0.0">
+            <state line="37" column="74" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,10 +162,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="registration.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/registration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="34" selection-start="695" selection-end="713" vertical-scroll-proportion="0.0">
+            <state line="18" column="34" selection-start="695" selection-end="713" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -186,7 +183,7 @@
       <file leaf-file-name="UserRegistrationServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="8" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,7 +203,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="36" selection-start="1270" selection-end="1270" vertical-scroll-proportion="-16.88889">
+            <state line="5" column="70" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.148148">
               <folding />
             </state>
           </provider>
@@ -237,15 +234,15 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/filePage.jsp" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java" />
-        <option value="$PROJECT_DIR$/web/successfulUpload.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/scripts/registration-form-validation.js" />
         <option value="$PROJECT_DIR$/web/styles/post-forms-style.css" />
         <option value="$PROJECT_DIR$/web/registration.jsp" />
         <option value="$PROJECT_DIR$/web/addFile.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/scripts/registration-form-validation.js" />
+        <option value="$PROJECT_DIR$/web/successfulUpload.jsp" />
       </list>
     </option>
   </component>
@@ -374,180 +371,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dudkoAA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dudkoAA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dudkoAA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dudkoAA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FileHostingProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dudkoAA" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -771,11 +594,12 @@
       <method />
     </configuration>
     <configuration default="false" name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="FileHostingProject:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/filehosting" />
           </settings>
         </artifact>
       </deployment>
@@ -924,7 +748,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19347496" sideWeight="0.51965815" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.215478" sideWeight="0.6700855" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1023,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="778" selection-end="814" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="72" selection-start="300" selection-end="300" vertical-scroll-proportion="-5.230769">
@@ -1051,6 +868,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/styles/post-forms-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="85" column="45" selection-start="3204" selection-end="3204" vertical-scroll-proportion="0.0">
@@ -1060,7 +884,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="123" selection-start="831" selection-end="949" vertical-scroll-proportion="0.0">
+        <state line="37" column="74" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="34" selection-start="695" selection-end="713" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/scripts/registration-form-validation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="58" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1076,44 +923,21 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="36" selection-start="1270" selection-end="1270" vertical-scroll-proportion="-16.88889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/registration-form-validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="62" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/styles/post-forms-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+        <state line="5" column="70" selection-start="300" selection-end="300" vertical-scroll-proportion="-3.148148">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/addFile.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="51" selection-start="940" selection-end="940" vertical-scroll-proportion="-3.6153846">
+        <state line="7" column="16" selection-start="325" selection-end="325" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration.jsp">
+    <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="34" selection-start="695" selection-end="713" vertical-scroll-proportion="0.0">
+        <state line="14" column="53" selection-start="786" selection-end="786" vertical-scroll-proportion="0.46850392">
           <folding />
         </state>
       </provider>

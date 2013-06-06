@@ -5,9 +5,9 @@
     <title>Successful Upload Page</title>
 </head>
 <body>
-    <c:url value="${pageContext.servletContext.contextPath}/file/download/id${fileID}" var="downloadLink"></c:url>
-    <c:url value="${pageContext.servletContext.contextPath}/index.jsp" var="indexPage"></c:url>
-    <c:url value="${pageContext.servletContext.contextPath}/file/download/id${fileID}?op=remove&removecode=${removeCode}"
+    <c:url value="${servletContext.contextPath}/file/download/id${fileID}" var="downloadLink"></c:url>
+    <c:url value="${servletContext.contextPath}/index.jsp" var="indexPage"></c:url>
+    <c:url value="${servletContext.contextPath}/file/download/id${fileID}?op=remove&removecode=${removeCode}"
            var="removeLink"></c:url>
     Your link to download file: <a href="${downloadLink}">http://localhost:8080${downloadLink}</a><br/>
     Your link to remove file: <a href="${removeLink}">http://localhost:8080${removeLink}</a><br/>
