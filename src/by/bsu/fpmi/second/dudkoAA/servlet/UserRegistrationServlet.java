@@ -45,8 +45,9 @@ public class UserRegistrationServlet extends HttpServlet{
         SiteAdministrator administrator = new SiteAdministrator();
         administrator.setLogin(request.getParameter("userLogin"));
         String password = request.getParameter("userPassword");
+        String salt = "hg38iu37";
         try {
-            administrator.setPassword(getPasswordMD5(password));
+            administrator.setPassword(getPasswordMD5(password) + salt);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
@@ -69,7 +70,7 @@ public class UserRegistrationServlet extends HttpServlet{
         List<String> errors = new ArrayList<>();
 
         String login = request.getParameter("userLogin");
-        if (isAttributeCorrect(login)) {
+        if (!isAttributeCorrect(login)) {
             errors.add("Login length should be 6 - 300 symbols");
         }
         else if (!login.matches("[0-9A-Za-z]+")) {
@@ -77,7 +78,7 @@ public class UserRegistrationServlet extends HttpServlet{
         }
 
         String password = request.getParameter("userPassword");
-        if (isAttributeCorrect(password)) {
+        if (!isAttributeCorrect(password)) {
             errors.add("Password length should be 6 - 300 symbols");
         }
         else {
@@ -88,7 +89,7 @@ public class UserRegistrationServlet extends HttpServlet{
         }
 
         String adminCode = request.getParameter("adminCode");
-        if (isAttributeCorrect(adminCode)) {
+        if (!isAttributeCorrect(adminCode)) {
             errors.add("Admin code length should be 6 - 300 symbols");
         }
         else if (!adminCode.matches("[0-9A-Za-z]+")) {

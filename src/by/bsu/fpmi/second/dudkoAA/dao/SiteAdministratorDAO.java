@@ -4,6 +4,7 @@ import by.bsu.fpmi.second.dudkoAA.HibernateUtil;
 import by.bsu.fpmi.second.dudkoAA.model.SiteAdministrator;
 import org.hibernate.Session;
 
+import org.hibernate.Query;
 import java.util.List;
 
 public class SiteAdministratorDAO {
@@ -34,7 +35,7 @@ public class SiteAdministratorDAO {
         // TODO Auto-generated method stub
         Session session = this.getSession();
         HibernateUtil.beginTransaction();
-        List<SiteAdministrator> administrators = session.createQuery("from " + SiteAdministrator.class).list();
+        List<SiteAdministrator> administrators = session.createQuery("from SiteAdministrator").list();
         HibernateUtil.commitTransaction();
         return administrators;
     }

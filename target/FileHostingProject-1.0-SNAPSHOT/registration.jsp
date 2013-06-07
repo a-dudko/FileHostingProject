@@ -37,7 +37,7 @@
         </fieldset>
 
         <input type="hidden" id="action" name="action" value="cancel"/>
-        <button type="button" onclick="submitForm();">Registrate</button>
+        <button type="button" onclick="submitForm();">Register</button>
         <button type="submit">Cancel</button>
     </form>
 
