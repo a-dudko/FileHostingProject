@@ -1,5 +1,6 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
+import by.bsu.fpmi.second.dudkoAA.Scrambler;
 import by.bsu.fpmi.second.dudkoAA.model.SiteAdministrator;
 import by.bsu.fpmi.second.dudkoAA.service.SiteAdministratorBC;
 
@@ -54,29 +55,15 @@ public class UserRegistrationServlet extends HttpServlet{
         administrator.setLogin(request.getParameter("userLogin"));
         String password = request.getParameter("userPassword");
         try {
-            administrator.setPassword(getPasswordMD5(password));
+            administrator.setPassword(Scrambler.getInstance().getPasswordMD5(password));
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
         return administrator;
     }
 
-    private String getPasswordMD5(String password) throws NoSuchAlgorithmException {
-        StringBuffer hexString = new StringBuffer();
-        MessageDigest messageDigest = MessageDigest.getInstance("MD5");
-        String salt = "hg38iu37";
-        messageDigest.update((password + salt).getBytes());
-        byte digest[] = messageDigest.digest();
-        for (int i = 0; i < digest.length; i++) {
-            hexString.append(Integer.toHexString(0xFF & digest[i]));
-        }
-        return hexString.toString();
-    }
-
-
     private List<String> getRequestErrors(HttpServletRequest request) {
         List<String> errors = new ArrayList<>();
-
         validateUserStringField(errors, request.getParameter("userLogin"),"user.login");
 
         String password = request.getParameter("userPassword");

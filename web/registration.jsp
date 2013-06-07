@@ -4,7 +4,7 @@
 <html>
 <head>
     <fmt:setBundle basename="messages"/>
-    <title><fmt:message key="site.registration"/></title>
+    <title><fmt:message key="site.register"/></title>
     <link rel="stylesheet" href="styles/post-forms-style.css">
     <script type="text/javascript" src="scripts/registration-form-validation.js"></script>
 </head>

@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c266a933-97ad-430d-bc3b-0dbc26dd155f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/addFile.jsp" afterPath="$PROJECT_DIR$/web/addFile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/messages.properties" afterPath="$PROJECT_DIR$/resources/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/scripts/registration-form-validation.js" afterPath="$PROJECT_DIR$/web/scripts/registration-form-validation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/registration.jsp" afterPath="$PROJECT_DIR$/web/registration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/successfulUpload.jsp" afterPath="$PROJECT_DIR$/web/successfulUpload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/scripts/upload-form-validation.js" afterPath="$PROJECT_DIR$/web/scripts/upload-form-validation.js" />
     </list>
     <ignored path="FileHostingProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +20,7 @@
     <file path="/addFile.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370619488398" ignored="false" />
     <file path="/editUser.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369249900306" ignored="false" />
     <file path="$PROJECT_DIR$/../student/web/editUser.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370620019072" ignored="false" />
-    <file path="/registration.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370619474873" ignored="false" />
+    <file path="/registration.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370628702517" ignored="false" />
     <file path="$PROJECT_DIR$/../student/src/com/exadel/education/web/student/model/Student.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369218859552" ignored="false" />
     <file path="/File.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370286972148" ignored="false" />
     <file path="/fragment.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369853922211" ignored="false" />
@@ -50,13 +43,14 @@
     <file path="/successfulUpload.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370619481095" ignored="false" />
     <file path="/filePage.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370288188298" ignored="false" />
     <file path="/registration-form-validation.js" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370545493026" ignored="false" />
-    <file path="/UserRegistrationServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370628478315" ignored="false" />
+    <file path="/UserRegistrationServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370629583601" ignored="false" />
     <file path="/SiteAdministrator.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370586509724" ignored="false" />
     <file path="/SiteAdministratorBC.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370543061441" ignored="false" />
     <file path="/SiteAdministratorDAO.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370586979864" ignored="false" />
     <file path="/messages.properties" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370628376584" ignored="false" />
     <file path="$PROJECT_DIR$/../student/src/com/exadel/education/web/student/servlet/SaveStudentServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370611715947" ignored="false" />
     <file path="/upload-form-validation.js" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370621895361" ignored="false" />
+    <file path="/Scrambler.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370629058698" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,10 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRegistrationServlet.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="UserRegistrationServlet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="52" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
+            <state line="65" column="48" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.39513108">
               <folding />
             </state>
           </provider>
@@ -157,16 +151,16 @@
       <file leaf-file-name="registration.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/registration.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="57" selection-start="426" selection-end="426" vertical-scroll-proportion="-5.230769">
+            <state line="6" column="42" selection-start="290" selection-end="290" vertical-scroll-proportion="11.846154">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.properties" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="messages.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="27" selection-start="957" selection-end="957" vertical-scroll-proportion="0.9363296">
+            <state line="16" column="49" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -208,15 +202,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="successfulUpload.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-12.423077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -235,7 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileBC.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/SiteAdministratorBC.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/SiteAdministrator.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java" />
@@ -244,12 +228,13 @@
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/scripts/registration-form-validation.js" />
-        <option value="$PROJECT_DIR$/web/registration.jsp" />
         <option value="$PROJECT_DIR$/web/successfulUpload.jsp" />
         <option value="$PROJECT_DIR$/web/addFile.jsp" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
         <option value="$PROJECT_DIR$/web/scripts/upload-form-validation.js" />
         <option value="$PROJECT_DIR$/resources/messages.properties" />
+        <option value="$PROJECT_DIR$/web/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/Scrambler.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" />
       </list>
     </option>
@@ -902,7 +887,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1005,29 +990,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="74" selection-start="363" selection-end="363" vertical-scroll-proportion="0.29912025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/SiteAdministrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="41" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="8" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
@@ -1065,23 +1027,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="301" selection-end="335" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/successfulUpload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="44" selection-start="1016" selection-end="1016" vertical-scroll-proportion="-12.423077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="57" selection-start="426" selection-end="426" vertical-scroll-proportion="-5.230769">
           <folding />
         </state>
       </provider>
@@ -1114,16 +1062,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
+    <entry file="file://$PROJECT_DIR$/resources/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
+        <state line="16" column="49" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/messages.properties">
+    <entry file="file://$PROJECT_DIR$/web/registration.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="27" selection-start="957" selection-end="957" vertical-scroll-proportion="0.9363296">
+        <state line="6" column="42" selection-start="290" selection-end="290" vertical-scroll-proportion="11.846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/RequestParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="133" selection-end="133" vertical-scroll-proportion="0.25468165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="42" selection-start="301" selection-end="335" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="36" selection-start="207" selection-end="207" vertical-scroll-proportion="0.19101124">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/Scrambler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="355" selection-end="355" vertical-scroll-proportion="0.42696628">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="48" selection-start="2640" selection-end="2640" vertical-scroll-proportion="0.39513108">
           <folding />
         </state>
       </provider>
