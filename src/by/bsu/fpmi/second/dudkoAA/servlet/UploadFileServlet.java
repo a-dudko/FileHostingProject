@@ -29,9 +29,8 @@ public class UploadFileServlet extends HttpServlet {
         String action = request.getParameter("action");
         if (action.equals("upload")) {
             uploadFile(request, response);
-        }
-        else {
-            response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "index.jsp"));
+        } else {
+            response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "/index.jsp"));
         }
     }
 

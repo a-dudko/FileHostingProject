@@ -3,7 +3,7 @@ function submitForm() {
     if (!validateUserRegistrationForm()) {
         return;
     }
-    document.getElementById("action").value = 'save';
+    document.getElementById("action").value = 'register';
     document.forms["userRegistrationForm"].submit();
 }
 function validateUserRegistrationForm() {

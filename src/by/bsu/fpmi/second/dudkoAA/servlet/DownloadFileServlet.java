@@ -66,12 +66,12 @@ public class DownloadFileServlet extends HttpServlet {
 
     private void downloadFile(HttpServletResponse response, File fileFromDB) throws IOException {
         java.io.File file = new java.io.File(filePath + java.io.File.separator + fileFromDB.getFileName());
+        updateResponseWithContentInfo(response, file);
         DataInputStream inputStream = new DataInputStream(new FileInputStream(file));
         ServletOutputStream outputStream = response.getOutputStream();
         downloadFileContent(inputStream, outputStream);
         inputStream.close();
         outputStream.close();
-        updateResponseWithContentInfo(response, file);
     }
 
     private File getFileFromDB(String requestURI) {

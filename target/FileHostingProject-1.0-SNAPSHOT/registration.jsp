@@ -41,7 +41,7 @@
         <button type="submit">Cancel</button>
     </form>
 
-    <c:url value="${pageContext.servletContext.contextPath}/index.jsp" var="indexPage"></c:url>
+    <c:url value="${servletContext.contextPath}/index.jsp" var="indexPage"></c:url>
     <a href="${indexPage}">Main Page</a>
 </body>
 </html>
