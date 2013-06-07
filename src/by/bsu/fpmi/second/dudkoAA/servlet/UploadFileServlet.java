@@ -13,7 +13,6 @@ import javax.servlet.http.Part;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 @MultipartConfig
 public class UploadFileServlet extends HttpServlet {
@@ -21,31 +20,39 @@ public class UploadFileServlet extends HttpServlet {
 
     private String filePath;
 
-    private FileBC fileBC = FileBC.getInstance();
-
     public void init() {
         filePath = "C:" + java.io.File.separator + "Temp";
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+        if (action.equals("upload")) {
+            uploadFile(request, response);
+        }
+        else {
+            response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "index.jsp"));
+        }
+    }
+
+    private void uploadFile(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         List<String> messages = getRequestErrors(request);
         String jspToForward;
-        if (messages.size() != 0) {
-            request.setAttribute("messages",messages);
+        if (!messages.isEmpty()){
+            request.setAttribute("messages", messages);
             jspToForward = "/addFile.jsp";
         }
         else {
-            File file = makeFileObject(request, createFile(request.getPart("file")));
-            fileBC.addFile(file);
-            updateRequest(request,file);
+            File file = makeFileObject(request, createFileOnServer(request.getPart("file")));
+            FileBC.getInstance().addFile(file);
+            updateRequestWithInfoForLinks(request, file);
             jspToForward = "/successfulUpload.jsp";
         }
         RequestDispatcher dispatcher = request.getRequestDispatcher(jspToForward);
         dispatcher.forward(request, response);
     }
 
-    private String createFile(Part filePart) throws IOException, ServletException {
+    private String createFileOnServer(Part filePart) throws IOException, ServletException {
         InputStream inputStream = filePart.getInputStream();
         String fileName = getFileName(filePart);
         java.io.File file = new java.io.File(filePath + java.io.File.separator + fileName);
@@ -77,7 +84,7 @@ public class UploadFileServlet extends HttpServlet {
         return null;
     }
 
-    private void updateRequest(HttpServletRequest request, File file) {
+    private void updateRequestWithInfoForLinks(HttpServletRequest request, File file) {
         request.setAttribute("fileID", file.getId());
         request.setAttribute("removeCode", file.getRemoveCode());
     }

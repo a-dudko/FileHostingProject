@@ -3,7 +3,7 @@ function submitForm() {
     if (!validateFileUploadForm()) {
         return;
     }
-    document.getElementById("action").value = 'save';
+    document.getElementById("action").value = 'upload';
     document.forms["fileUploadForm"].submit();
 }
 function validateFileUploadForm() {

@@ -22,8 +22,6 @@ public class DownloadFileServlet extends HttpServlet {
 
     private String filePath;
 
-    private FileBC fileBC = new FileBC();
-
     public void init() {
         filePath = "C:" + java.io.File.separator + "Temp";
     }
@@ -40,15 +38,9 @@ public class DownloadFileServlet extends HttpServlet {
                 removeFile(request, response, fileFromDB);
             }
             else {
-                createFile(response, fileFromDB);
+                downloadFile(response, fileFromDB);
             }
         }
-    }
-
-    private void createFile(HttpServletResponse response, File fileFromDB) throws IOException {
-        java.io.File file = new java.io.File(filePath + java.io.File.separator + fileFromDB.getFileName());
-        updateResponseParams(response, file);
-        downloadFile(response, file);
     }
 
     private void removeFile(HttpServletRequest request, HttpServletResponse response,
@@ -56,7 +48,7 @@ public class DownloadFileServlet extends HttpServlet {
         String currentFileRemoveCode = fileFromDB.getRemoveCode().toString();
         String requestRemoveCode = request.getParameter("removecode");
         if (currentFileRemoveCode.equals(requestRemoveCode)) {
-            fileBC.removeFile(fileFromDB);
+            FileBC.getInstance().removeFile(fileFromDB);
             response.getOutputStream().println("<html><body>The file has been removed</body></html>");
         }
         else {
@@ -72,12 +64,14 @@ public class DownloadFileServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    private void downloadFile(HttpServletResponse response, java.io.File file) throws IOException {
-        DataInputStream in = new DataInputStream(new FileInputStream(file));
-        ServletOutputStream outStream = response.getOutputStream();
-        downloadFileContent(in, outStream);
-        in.close();
-        outStream.close();
+    private void downloadFile(HttpServletResponse response, File fileFromDB) throws IOException {
+        java.io.File file = new java.io.File(filePath + java.io.File.separator + fileFromDB.getFileName());
+        DataInputStream inputStream = new DataInputStream(new FileInputStream(file));
+        ServletOutputStream outputStream = response.getOutputStream();
+        downloadFileContent(inputStream, outputStream);
+        inputStream.close();
+        outputStream.close();
+        updateResponseWithContentInfo(response, file);
     }
 
     private File getFileFromDB(String requestURI) {
@@ -91,10 +85,10 @@ public class DownloadFileServlet extends HttpServlet {
         }
         StringBuilder IDPart = new StringBuilder(URIParts[i]);
         int fileID = Integer.parseInt(IDPart.substring(2, IDPart.length()));
-        return fileBC.getFile(fileID);
+        return FileBC.getInstance().getFile(fileID);
     }
 
-    private void updateResponseParams(HttpServletResponse response, java.io.File file) {
+    private void updateResponseWithContentInfo(HttpServletResponse response, java.io.File file) {
         response.setContentType(getMimeType());
         response.setContentLength((int)file.length());
         String fileName = file.getName();
