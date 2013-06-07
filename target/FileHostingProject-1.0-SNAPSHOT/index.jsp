@@ -4,13 +4,14 @@
 <html>
 <head>
     <title>Index Page</title>
+    <fmt:setBundle basename="messages"/>
 </head>
 <body>
-    <h1>Welcome to our file hosting service</h1>
+    <h1><fmt:message key="site.greeting"/></h1>
     <div id="messages" style="color: red;">
         ${message} <br/>
     </div>
-    <a href="${pageContext.servletContext.contextPath}/registration.jsp">Registration</a>
-    <a href="${pageContext.servletContext.contextPath}/addFile.jsp">Add file</a>
+    <a href="${pageContext.servletContext.contextPath}/registration.jsp"><fmt:message key="site.registration"/></a>
+    <a href="${pageContext.servletContext.contextPath}/addFile.jsp"><fmt:message key="site.addfile"/></a>
 </body>
 </html>

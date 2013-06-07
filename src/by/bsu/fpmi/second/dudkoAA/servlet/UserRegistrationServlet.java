@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 public class UserRegistrationServlet extends HttpServlet{
 
@@ -75,42 +77,46 @@ public class UserRegistrationServlet extends HttpServlet{
     private List<String> getRequestErrors(HttpServletRequest request) {
         List<String> errors = new ArrayList<>();
 
-        checkParameter(request, errors, "userLogin");
+        validateUserStringField(errors, request.getParameter("userLogin"),"user.login");
 
         String password = request.getParameter("userPassword");
-        if (isLengthCorrect(errors, "userPassword", password)) {
+        if (isLengthCorrect(errors, password, "user.password")) {
             String repeatPassword = request.getParameter("userRepPassword");
             if (!password.equals(repeatPassword)) {
-                errors.add("Passwords should be equal");
+                String errorMessage = MessageFormat.format(getMessage("error.passwords.notequal"));
+                errors.add(errorMessage);
             }
         }
 
-        checkParameter(request, errors, "adminCode");
+        validateUserStringField(errors, request.getParameter("userLogin"), "user.admincode");
 
         if (isLoginExists(request.getParameter("userLogin"))) {
-            errors.add("Sorry, such login already exists");
+            String errorMessage = MessageFormat.format(getMessage("error.login.exists"));
+            errors.add(errorMessage);
         }
         return errors;
     }
 
-    private void checkParameter(HttpServletRequest request, List<String> errors, String parameter) {
-        String parameterValue = request.getParameter(parameter);
-        isLengthCorrect(errors, parameter, parameterValue);
-        isConsistsOfLettersAndNumbers(errors, parameter, parameterValue);
+    private void validateUserStringField(List<String> errors, String fieldValue, String fieldName) {
+        isLengthCorrect(errors, fieldValue, fieldName);
+        isConsistsOfLettersAndNumbers(errors, fieldValue, fieldName);
     }
 
-    private boolean isConsistsOfLettersAndNumbers(List<String> errors, String parameter, String parameterValue) {
-        if (!parameterValue.matches("[0-9A-Za-z]+")) {
-            errors.add(parameter + " should consist of numbers and letters only");
+    private boolean isConsistsOfLettersAndNumbers(List<String> errors, String fieldName, String fieldValue) {
+        if (!fieldValue.matches("[0-9A-Za-z]+")) {
+            String errorMessage = MessageFormat.format(getMessage("error.field.letandnum"), getMessage(fieldName));
+            errors.add(errorMessage);
             return false;
         }
         return true;
     }
 
-    private boolean isLengthCorrect(List<String> errors, String parameter, String parameterValue) {
-        int parameterValueLength = parameterValue.length();
-        if (parameterValueLength > MAX_CHARACTERS || parameterValueLength < MIN_CHARACTERS) {
-            errors.add(parameter + " length should be 6 - 300 symbols");
+    private boolean isLengthCorrect(List<String> errors, String fieldName, String fieldValue) {
+        int fieldValueLength = fieldValue.length();
+        if (fieldValueLength > MAX_CHARACTERS || fieldValueLength < MIN_CHARACTERS) {
+            String errorMessage = MessageFormat.format(getMessage("error.field.length"),
+                    getMessage(fieldName), MIN_CHARACTERS, MAX_CHARACTERS);
+            errors.add(errorMessage);
             return false;
         }
         return true;
@@ -124,5 +130,15 @@ public class UserRegistrationServlet extends HttpServlet{
             }
         }
         return false;
+    }
+
+    /**
+     * get message from property file
+     * @param key the key in property file
+     * @return the message from property file
+     */
+    private String getMessage(String key) {
+        ResourceBundle bundle = ResourceBundle.getBundle("messages");
+        return bundle.getString(key);
     }
 }

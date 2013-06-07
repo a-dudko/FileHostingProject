@@ -11,12 +11,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.*;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 @MultipartConfig
 public class UploadFileServlet extends HttpServlet {
     private final static int BUFFER_SIZE = 2048;
+
+    private final static int MAX_CHARACTERS = 300;
+
+    private final static int MIN_CHARACTERS = 1;
 
     private String filePath;
 
@@ -100,18 +106,39 @@ public class UploadFileServlet extends HttpServlet {
 
     private List<String> getRequestErrors(HttpServletRequest request) {
         List<String> errors = new ArrayList<>();
-        if ("".equals(request.getParameter("fileDescription"))) {
-            errors.add("Description field should not be empty");
-        }
-        if ("".equals(request.getParameter("fileAuthor"))) {
-            errors.add("Author field should not be empty");
-        }
-        if ("".equals(request.getParameter("fileNotes"))) {
-            errors.add("Notes field should not be empty");
-        }
-        if ("".equals(request.getParameter("file"))) {
+        validateFileStringField(request.getParameter("fileDescription"), errors, "file.description");
+        validateFileStringField(request.getParameter("fileAuthor"), errors, "file.author");
+        validateFileStringField(request.getParameter("fileNotes"), errors, "file.notes");
+        if (request.getParameter("file") == null) {
             errors.add("File should be chosen");
         }
         return errors;
+    }
+
+    /**
+     * validate value and add error messages to messages list
+     * @param value the value to validate
+     * @param errors the messages list
+     * @param fieldName the key of field name in properties file
+     */
+    private void validateFileStringField(String value, List<String> errors, String fieldName) {
+        if (value == null || value.trim().equals("")) {
+            String errorMessage = MessageFormat.format(getMessage("error.empty"), getMessage(fieldName));
+            errors.add(errorMessage);
+        } else if (value.length() > MAX_CHARACTERS) {
+            String errorMessage = MessageFormat.format(getMessage("error.field.length"),
+                    getMessage(fieldName), MIN_CHARACTERS, MAX_CHARACTERS);
+            errors.add(errorMessage);
+        }
+    }
+
+    /**
+     * get message from property file
+     * @param key the key in property file
+     * @return the message from property file
+     */
+    private String getMessage(String key) {
+        ResourceBundle bundle = ResourceBundle.getBundle("messages");
+        return bundle.getString(key);
     }
 }
