@@ -31,6 +31,15 @@
         <url-pattern>/registration/*</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>userSignInServlet</servlet-name>
+        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.UserSignInServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userSignInServlet</servlet-name>
+        <url-pattern>/login/*</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/notFound.jsp</location>

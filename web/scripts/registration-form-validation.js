@@ -12,7 +12,7 @@ function validateUserRegistrationForm() {
     var loginElement = document.getElementById("login");
     loginElement.style.backgroundColor = "white";
     if (loginElement.value.length < 6 || loginElement.value.length > 300) {
-        errorMessages.push("<br>Login length should be 6 - 300 symbols");
+        errorMessages.push("Login length should be 6 - 300 symbols");
         loginElement.style.backgroundColor = "pink";
     }
     else

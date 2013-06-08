@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import static java.text.MessageFormat.format;
+
 public class UserRegistrationServlet extends HttpServlet{
 
     private final static int MAX_CHARACTERS = 300;
@@ -70,15 +72,15 @@ public class UserRegistrationServlet extends HttpServlet{
         if (isLengthCorrect(errors, password, "user.password")) {
             String repeatPassword = request.getParameter("userRepPassword");
             if (!password.equals(repeatPassword)) {
-                String errorMessage = MessageFormat.format(getMessage("error.passwords.notequal"));
+                String errorMessage = format(getMessage("error.passwords.notequal"));
                 errors.add(errorMessage);
             }
         }
 
-        validateUserStringField(errors, request.getParameter("userLogin"), "user.admincode");
+        validateUserStringField(errors, request.getParameter("adminCode"), "user.admincode");
 
         if (isLoginExists(request.getParameter("userLogin"))) {
-            String errorMessage = MessageFormat.format(getMessage("error.login.exists"));
+            String errorMessage = format(getMessage("error.login.exists"));
             errors.add(errorMessage);
         }
         return errors;
@@ -89,9 +91,9 @@ public class UserRegistrationServlet extends HttpServlet{
         isConsistsOfLettersAndNumbers(errors, fieldValue, fieldName);
     }
 
-    private boolean isConsistsOfLettersAndNumbers(List<String> errors, String fieldName, String fieldValue) {
+    private boolean isConsistsOfLettersAndNumbers(List<String> errors, String fieldValue, String fieldName) {
         if (!fieldValue.matches("[0-9A-Za-z]+")) {
-            String errorMessage = MessageFormat.format(getMessage("error.field.letandnum"), getMessage(fieldName));
+            String errorMessage = format(getMessage("error.field.letandnum"), getMessage(fieldName));
             errors.add(errorMessage);
             return false;
         }
@@ -101,7 +103,7 @@ public class UserRegistrationServlet extends HttpServlet{
     private boolean isLengthCorrect(List<String> errors, String fieldName, String fieldValue) {
         int fieldValueLength = fieldValue.length();
         if (fieldValueLength > MAX_CHARACTERS || fieldValueLength < MIN_CHARACTERS) {
-            String errorMessage = MessageFormat.format(getMessage("error.field.length"),
+            String errorMessage = format(getMessage("error.field.length"),
                     getMessage(fieldName), MIN_CHARACTERS, MAX_CHARACTERS);
             errors.add(errorMessage);
             return false;

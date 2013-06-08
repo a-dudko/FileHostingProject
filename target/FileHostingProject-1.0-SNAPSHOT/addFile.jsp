@@ -4,7 +4,7 @@
 <html>
 <head>
     <fmt:setBundle basename="messages"/>
-    <title><fmt:message key="file.upload"/></title>
+    <title><fmt:message key="site.upload"/></title>
     <link rel="stylesheet" href="styles/post-forms-style.css">
     <script type="text/javascript" src="scripts/upload-form-validation.js"></script>
 </head>

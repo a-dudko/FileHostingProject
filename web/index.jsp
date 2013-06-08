@@ -4,14 +4,40 @@
 <html>
 <head>
     <title>Index Page</title>
+    <script type="text/javascript" src="scripts/login-form-validation.js"></script>
+    <link rel="stylesheet" href="styles/post-forms-style.css">
     <fmt:setBundle basename="messages"/>
 </head>
 <body>
     <h1><fmt:message key="site.greeting"/></h1>
     <div id="messages" style="color: red;">
-        ${message} <br/>
+        <c:forEach items="${messages}" var="message">
+            ${message} <br/>
+        </c:forEach>
     </div>
-    <a href="${pageContext.servletContext.contextPath}/registration.jsp"><fmt:message key="site.registration"/></a>
+    <c:choose>
+        <c:when test="${empty currentUser}">
+            <form id="userLoginForm" action="${pageContext.servletContext.contextPath}/login" method="POST">
+                <div class="main">
+                    <div class="field">
+                        <label for="login"><fmt:message key="user.login"/></label>
+                        <input type="text" id="login" name="userLogin" /><br>
+                    </div>
+                    <div class="field">
+                        <label for="password"><fmt:message key="user.password"/></label>
+                        <input type="password" id="password" name="userPassword"/><br>
+                    </div>
+                </div> <br><br><br>
+                <button type="button" onclick="submitForm();"><fmt:message key="action.signin"/></button>
+            </form>
+            <a href="${pageContext.servletContext.contextPath}/registration.jsp"><fmt:message key="site.registration"/></a>
+        </c:when>
+        <c:otherwise>
+            <h3>Hello, ${currentUser}!</h3>
+            <button type="button" onclick=""><fmt:message key="action.signout"/></button>
+        </c:otherwise>
+    </c:choose>
+
     <a href="${pageContext.servletContext.contextPath}/addFile.jsp"><fmt:message key="site.addfile"/></a>
 </body>
 </html>
