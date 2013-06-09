@@ -10,16 +10,25 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>uploadFileServlet</servlet-name>
-        <url-pattern>/file/upload/*</url-pattern>
+        <url-pattern>/file/upload</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>downloadFileServlet</servlet-name>
-        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.DownloadFileServlet</servlet-class>
+        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.DownloadAndRemoveFileServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>downloadFileServlet</servlet-name>
         <url-pattern>/file/download/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>filesListServlet</servlet-name>
+        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.FilesListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>filesListServlet</servlet-name>
+        <url-pattern>/file/list</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -28,7 +37,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>userRegistrationServlet</servlet-name>
-        <url-pattern>/registration/*</url-pattern>
+        <url-pattern>/registration</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -37,7 +46,16 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>userSignInServlet</servlet-name>
-        <url-pattern>/login/*</url-pattern>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userSignOutServlet</servlet-name>
+        <servlet-class>by.bsu.fpmi.second.dudkoAA.servlet.UserSignOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userSignOutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
 
     <error-page>

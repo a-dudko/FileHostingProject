@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>FileHostingProject - Checkstyle report</title>
+    <link>${project.url}</link>
+    <description>FileHostingProject - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2013</copyright>
+    <item>
+      <title>File: 16,
+             Errors: 173,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>${project.url}/checkstyle.html</link>
+      <description>
+        <p>Click <a href="${project.url}/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.model.File.java">by/bsu/fpmi/second/dudkoAA/model/File.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.service.FileService.java">by/bsu/fpmi/second/dudkoAA/service/FileService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.servlet.UserSignInServlet.java">by/bsu/fpmi/second/dudkoAA/servlet/UserSignInServlet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  18
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.model.SiteAdministrator.java">by/bsu/fpmi/second/dudkoAA/model/SiteAdministrator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.servlet.UserSignOutServlet.java">by/bsu/fpmi/second/dudkoAA/servlet/UserSignOutServlet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.servlet.DownloadAndRemoveFileServlet.java">by/bsu/fpmi/second/dudkoAA/servlet/DownloadAndRemoveFileServlet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#hibernate.properties">hibernate.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.Encryptor.java">by/bsu/fpmi/second/dudkoAA/Encryptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.dao.FileDAO.java">by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.service.SiteAdministratorService.java">by/bsu/fpmi/second/dudkoAA/service/SiteAdministratorService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.servlet.UploadFileServlet.java">by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  34
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.dao.SiteAdministratorDAO.java">by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#messages.properties">messages.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.servlet.FilesListServlet.java">by/bsu/fpmi/second/dudkoAA/servlet/FilesListServlet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.HibernateUtil.java">by/bsu/fpmi/second/dudkoAA/HibernateUtil.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#by.bsu.fpmi.second.dudkoAA.servlet.UserRegistrationServlet.java">by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

@@ -2,46 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c266a933-97ad-430d-bc3b-0dbc26dd155f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/Encryptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileService.java" />
+      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\src\by\bsu\fpmi\second\dudkoAA\RequestParams.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\src\by\bsu\fpmi\second\dudkoAA\Scrambler.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\src\by\bsu\fpmi\second\dudkoAA\service\FileBC.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/File.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/File.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/SiteAdministrator.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/SiteAdministrator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignInServlet.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignInServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/filesList.jsp" afterPath="$PROJECT_DIR$/web/filesList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/hibernate.properties" afterPath="$PROJECT_DIR$/resources/hibernate.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/messages.properties" afterPath="$PROJECT_DIR$/resources/messages.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/scripts/registration-form-validation.js" afterPath="$PROJECT_DIR$/web/scripts/registration-form-validation.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Programs\labs\4 sem\UP\FileHostingProject\src\by\bsu\fpmi\second\dudkoAA\service\SiteAdministratorBC.java" afterPath="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/SiteAdministratorService.java" />
     </list>
     <ignored path="FileHostingProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/pom.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369748151214" ignored="false" />
     <file path="/notFound.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370287412748" ignored="false" />
     <file path="/Jsp File.txt.ft" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369139175585" ignored="false" />
-    <file path="/index.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370675947684" ignored="false" />
+    <file path="/index.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370686604950" ignored="false" />
     <file path="$PROJECT_DIR$/../student/student.iml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369140970055" ignored="false" />
-    <file path="/web.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370674089099" ignored="false" />
+    <file path="/web.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370686647297" ignored="false" />
     <file path="/a.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369141275469" ignored="false" />
-    <file path="/Dummy.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370639987056" ignored="false" />
+    <file path="/Dummy.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370801380286" ignored="false" />
     <file path="$PROJECT_DIR$/../student/.idea/workspace.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369238361178" ignored="false" />
     <file path="/FileAddingServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369173994260" ignored="false" />
-    <file path="/addFile.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370619488398" ignored="false" />
+    <file path="/addFile.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370684723739" ignored="false" />
     <file path="/editUser.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369249900306" ignored="false" />
     <file path="$PROJECT_DIR$/../student/web/editUser.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370620019072" ignored="false" />
     <file path="/registration.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370628702517" ignored="false" />
     <file path="$PROJECT_DIR$/../student/src/com/exadel/education/web/student/model/Student.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369218859552" ignored="false" />
-    <file path="/File.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370286972148" ignored="false" />
+    <file path="/File.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370805996957" ignored="false" />
     <file path="/fragment.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369853922211" ignored="false" />
     <file path="/FileUploadServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369219685623" ignored="false" />
-    <file path="/UploadFileServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370620040879" ignored="false" />
+    <file path="/UploadFileServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370817209086" ignored="false" />
     <file path="/hibernate.properties" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370630055918" ignored="false" />
     <file path="/a.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369662857971" ignored="false" />
     <file path="/sample.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369662869415" ignored="false" />
-    <file path="/HibernateUtil.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369689487777" ignored="false" />
-    <file path="/FileDAO.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370542876682" ignored="false" />
-    <file path="/FileBC.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370542956538" ignored="false" />
+    <file path="/HibernateUtil.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370805160280" ignored="false" />
+    <file path="/FileDAO.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370803320203" ignored="false" />
+    <file path="/FileBC.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370808160915" ignored="false" />
     <file path="/hibernate.cfg.xml" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370542421650" ignored="false" />
     <file path="/a.dummy" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369747630608" ignored="false" />
     <file path="/successfullUpload.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369825164102" ignored="false" />
-    <file path="/DownloadFileServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370616193179" ignored="false" />
+    <file path="/DownloadFileServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370789598718" ignored="false" />
     <file path="$PROJECT_DIR$/../../Algorithms/src/Solution.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369855372007" ignored="false" />
     <file path="/Solution.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369854187989" ignored="false" />
     <file path="$PROJECT_DIR$/../../Algorithms/input.txt" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1369854222387" ignored="false" />
@@ -49,18 +63,23 @@
     <file path="/successfulUpload.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370619481095" ignored="false" />
     <file path="/filePage.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370288188298" ignored="false" />
     <file path="/registration-form-validation.js" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370545493026" ignored="false" />
-    <file path="/UserRegistrationServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370629583601" ignored="false" />
-    <file path="/SiteAdministrator.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370586509724" ignored="false" />
-    <file path="/SiteAdministratorBC.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370543061441" ignored="false" />
-    <file path="/SiteAdministratorDAO.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370586979864" ignored="false" />
-    <file path="/messages.properties" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370675939532" ignored="false" />
+    <file path="/UserRegistrationServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370817477022" ignored="false" />
+    <file path="/SiteAdministrator.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370806766442" ignored="false" />
+    <file path="/SiteAdministratorBC.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370807648993" ignored="false" />
+    <file path="/SiteAdministratorDAO.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370804339077" ignored="false" />
+    <file path="/messages.properties" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370818199491" ignored="false" />
     <file path="$PROJECT_DIR$/../student/src/com/exadel/education/web/student/servlet/SaveStudentServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370611715947" ignored="false" />
     <file path="/upload-form-validation.js" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370621895361" ignored="false" />
-    <file path="/Scrambler.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370629058698" ignored="false" />
+    <file path="/Scrambler.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370806939802" ignored="false" />
     <file path="/jquery-login-form.js" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370670474384" ignored="false" />
     <file path="/post-forms-style.css" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370672372413" ignored="false" />
-    <file path="/UserSignInServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370675802854" ignored="false" />
+    <file path="/UserSignInServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370814977575" ignored="false" />
     <file path="/login-form-validation.js" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370674027881" ignored="false" />
+    <file path="/UserSignOutServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370813813748" ignored="false" />
+    <file path="/filesList.jsp" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370791846244" ignored="false" />
+    <file path="/FilesListServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370813043522" ignored="false" />
+    <file path="/SiteAdministratorService.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370809129295" ignored="false" />
+    <file path="/DownloadAndRemoveFileServlet.java" changelist="c266a933-97ad-430d-bc3b-0dbc26dd155f" time="1370812306350" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +99,7 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -114,7 +134,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -125,100 +144,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserRegistrationServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
+      <file leaf-file-name="FileService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="106" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0">
+            <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/registration.jsp">
+      <file leaf-file-name="SiteAdministratorService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/SiteAdministratorService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="14" selection-start="475" selection-end="629" vertical-scroll-proportion="3.9230769">
+            <state line="14" column="22" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <file leaf-file-name="DownloadAndRemoveFileServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadAndRemoveFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="751" selection-end="751" vertical-scroll-proportion="0.27070063">
+            <state line="21" column="68" selection-start="698" selection-end="755" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/messages.properties">
+      <file leaf-file-name="FilesListServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/FilesListServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="23" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+            <state line="12" column="69" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="UserSignOutServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignOutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="27" selection-start="1589" selection-end="1589" vertical-scroll-proportion="-9.740741">
+            <state line="8" column="49" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UserSignInServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignInServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="72" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="636" selection-end="690" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteAdministratorDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java">
+      <file leaf-file-name="UserRegistrationServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
+            <state line="81" column="42" selection-start="3199" selection-end="3199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post-forms-style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/styles/post-forms-style.css">
+      <file leaf-file-name="messages.properties" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="32" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+            <state line="34" column="68" selection-start="888" selection-end="888" vertical-scroll-proportion="1.082397">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration-form-validation.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/scripts/registration-form-validation.js">
+      <file leaf-file-name="UploadFileServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+            <state line="76" column="83" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login-form-validation.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/scripts/login-form-validation.js">
+      <file leaf-file-name="Encryptor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/Encryptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="26" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+            <state line="17" column="7" selection-start="355" selection-end="488" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -242,22 +252,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/File.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/Scrambler.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/SiteAdministrator.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/Encryptor.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileBC.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/SiteAdministratorBC.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileService.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/SiteAdministratorService.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadAndRemoveFileServlet.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/FilesListServlet.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignOutServlet.java" />
         <option value="$PROJECT_DIR$/resources/hibernate.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/scripts/fallr.js" />
-        <option value="$PROJECT_DIR$/web/scripts/jquery.easing.js" />
-        <option value="$PROJECT_DIR$/web/scripts/jquery-1.10.1.min.js" />
-        <option value="$PROJECT_DIR$/web/scripts/jquery-login-form.js" />
-        <option value="$PROJECT_DIR$/web/styles/post-forms-style.css" />
-        <option value="$PROJECT_DIR$/web/scripts/registration-form-validation.js" />
-        <option value="$PROJECT_DIR$/web/scripts/login-form-validation.js" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" />
         <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignInServlet.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java" />
+        <option value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java" />
         <option value="$PROJECT_DIR$/resources/messages.properties" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -371,6 +381,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -579,12 +590,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -936,21 +946,21 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.6735043" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33162394" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33162394" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.6700855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423207" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.215478" sideWeight="0.32649574" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962063" sideWeight="0.5017065" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19347496" sideWeight="0.51965815" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.215478" sideWeight="0.6683761" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.215478" sideWeight="0.64273506" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35726497" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1030,132 +1040,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/scripts/fallr.js">
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="4579" selection-start="4579" selection-end="4579" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/jquery-1.10.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="82041" selection-end="82041" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1370671436074" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1370671436074" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1370671436074" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1370671436074" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1370671436074" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/jquery-login-form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="609" selection-end="609" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadFileServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.0">
+        <state line="4" column="54" selection-start="72" selection-end="126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/styles/post-forms-style.css">
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/model/SiteAdministrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
+        <state line="22" column="15" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="75" selection-start="5386" selection-end="5441" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="475" selection-end="629" vertical-scroll-proportion="3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/registration-form-validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/addFile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="50" selection-start="206" selection-end="206" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/scripts/login-form-validation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="27" selection-start="1589" selection-end="1589" vertical-scroll-proportion="-9.740741">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/SiteAdministratorDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
+        <state line="21" column="7" selection-start="406" selection-end="539" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/dao/FileDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="106" selection-start="3843" selection-end="3843" vertical-scroll-proportion="0.0">
+        <state line="13" column="36" selection-start="275" selection-end="307" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/messages.properties">
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/Encryptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+        <state line="17" column="7" selection-start="355" selection-end="488" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/service/SiteAdministratorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/FilesListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="69" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/hibernate.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignOutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="49" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserSignInServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="72" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="636" selection-end="690" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/DownloadAndRemoveFileServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="751" selection-end="751" vertical-scroll-proportion="0.27070063">
+        <state line="21" column="68" selection-start="698" selection-end="755" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UploadFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="83" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/bsu/fpmi/second/dudkoAA/servlet/UserRegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="42" selection-start="3199" selection-end="3199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="68" selection-start="888" selection-end="888" vertical-scroll-proportion="1.082397">
           <folding />
         </state>
       </provider>
@@ -1214,11 +1206,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|FileHostingProject</last-edited>
+          <last-edited>FileHostingProject</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1242,7 +1235,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3236994" />
               </list>
             </option>
           </splitter-proportions>

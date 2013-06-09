@@ -1,8 +1,8 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
-import by.bsu.fpmi.second.dudkoAA.Scrambler;
+import by.bsu.fpmi.second.dudkoAA.Encryptor;
 import by.bsu.fpmi.second.dudkoAA.model.SiteAdministrator;
-import by.bsu.fpmi.second.dudkoAA.service.SiteAdministratorBC;
+import by.bsu.fpmi.second.dudkoAA.service.SiteAdministratorService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,21 +17,34 @@ import java.util.ResourceBundle;
 
 import static java.text.MessageFormat.format;
 
-public class UserSignInServlet extends HttpServlet{
-    private final static int MAX_CHARACTERS = 300;
+/** Servlet used for signing in the administrators. */
+public class UserSignInServlet extends HttpServlet {
 
-    private final static int MIN_CHARACTERS = 6;
+    /** Maximum number of characters in input field. */
+    private static final int MAX_CHARACTERS = 300;
 
-    private final static int MAX_INTERVAL = 604800;
+    /** Minimum number of characters in input field. */
+    private static final int MIN_CHARACTERS = 6;
 
+    /** Interval in seconds.*/
+    private static final int MAX_INTERVAL = 604800;
+
+    /**
+     * Forwards to index page, if the log in information in request is correct,
+     * memorizes the user, else shows error messages to the user.
+     * @param request with the login and password typed by the user
+     * @param response for the request
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(final HttpServletRequest request,
+                          final HttpServletResponse response) throws ServletException, IOException {
         try {
             List<String> messages = validateUserInformation(request);
             if (messages.size() != 0) {
                 request.setAttribute("messages", messages);
-            }
-            else {
+            } else {
                 request.getSession().setAttribute("currentUser", request.getParameter("userLogin"));
                 request.getSession().setMaxInactiveInterval(MAX_INTERVAL);
             }
@@ -42,11 +55,18 @@ public class UserSignInServlet extends HttpServlet{
         dispatcher.forward(request, response);
     }
 
-    private List<String> validateUserInformation(HttpServletRequest request) throws NoSuchAlgorithmException {
+    /**
+     * Checks if the information entered by the user
+     * is correct.
+     * @param request with entered by user login and password
+     * @return the list of error messages
+     * @throws NoSuchAlgorithmException
+     */
+    private List<String> validateUserInformation(final HttpServletRequest request) throws NoSuchAlgorithmException {
         List<String> errors = new ArrayList<>();
 
         String login = request.getParameter("userLogin");
-        validateUserStringField(errors, login,"user.login");
+        validateUserStringField(errors, login, "user.login");
 
         String password = request.getParameter("userPassword");
         validateUserStringFieldLength(errors, password, "user.password");
@@ -58,19 +78,43 @@ public class UserSignInServlet extends HttpServlet{
         return errors;
     }
 
-    private void validateUserStringField(List<String> errors, String fieldValue, String fieldName) {
+    /**
+     * Checks the length of field value and its characters
+     * consistence.
+     * @param errors of user input strings
+     * @param fieldName of validated field
+     * @param fieldValue of validated field
+     */
+    private void validateUserStringField(final List<String> errors,
+                                         final String fieldValue, final String fieldName) {
         validateUserStringFieldLength(errors, fieldValue, fieldName);
         validateConsistenseOfLettersAndNumbers(errors, fieldValue, fieldName);
     }
 
-    private void validateConsistenseOfLettersAndNumbers(List<String> errors, String fieldValue, String fieldName) {
+    /**
+     * Checks if the field value consists of letters
+     * and numbers only and adds error messages to errors.
+     * @param errors of user input strings
+     * @param fieldName of validated field
+     * @param fieldValue of validated field
+     */
+    private void validateConsistenseOfLettersAndNumbers(final List<String> errors,
+                                                        final String fieldValue, final String fieldName) {
         if (!fieldValue.matches("[0-9A-Za-z]+")) {
             String errorMessage = format(getMessage("error.field.letandnum"), getMessage(fieldName));
             errors.add(errorMessage);
         }
     }
 
-    private void validateUserStringFieldLength(List<String> errors, String fieldName, String fieldValue) {
+    /**
+     * Checks the length of field value and adds error messages
+     * to errors.
+     * @param errors of user input strings
+     * @param fieldName of validated field
+     * @param fieldValue of validated field
+     */
+    private void validateUserStringFieldLength(final List<String> errors,
+                                               final String fieldName, final String fieldValue) {
         int fieldValueLength = fieldValue.length();
         if (fieldValueLength > MAX_CHARACTERS || fieldValueLength < MIN_CHARACTERS) {
             String errorMessage = format(getMessage("error.field.length"),
@@ -79,11 +123,18 @@ public class UserSignInServlet extends HttpServlet{
         }
     }
 
-    private boolean isSignInInformationCorrect(String login, String password) throws NoSuchAlgorithmException {
-        List<SiteAdministrator> administrators = SiteAdministratorBC.getInstance().getProfiles();
+    /**
+     * Checks if such login exists in DB and the password is correct.
+     * @param login typed by user
+     * @param password typed by user
+     * @return if such login exists in DB and the password is correct.
+     * @throws NoSuchAlgorithmException
+     */
+    private boolean isSignInInformationCorrect(final String login, final String password) throws NoSuchAlgorithmException {
+        List<SiteAdministrator> administrators = SiteAdministratorService.getInstance().getProfiles();
         for (SiteAdministrator admin : administrators) {
             if (admin.getLogin().equals(login)) {
-                if (admin.getPassword().equals(Scrambler.getInstance().getPasswordMD5(password))) {
+                if (admin.getPassword().equals(Encryptor.getInstance().getPasswordMD5(password))) {
                     return true;
                 }
                 return false;
@@ -93,11 +144,11 @@ public class UserSignInServlet extends HttpServlet{
     }
 
     /**
-     * get message from property file
+     * Get message from property file.
      * @param key the key in property file
      * @return the message from property file
      */
-    private String getMessage(String key) {
+    private String getMessage(final String key) {
         ResourceBundle bundle = ResourceBundle.getBundle("messages");
         return bundle.getString(key);
     }

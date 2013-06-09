@@ -33,7 +33,10 @@
             <a href="${pageContext.servletContext.contextPath}/registration.jsp"><fmt:message key="site.registration"/></a>
         </c:when>
         <c:otherwise>
-            <h3>Hello, ${currentUser}!</h3>
+            <h3><fmt:message key="site.logged.message"/> ${currentUser}!</h3>
+            <button type="button" onclick='window.location = "${pageContext.servletContext.contextPath}/logout" '>
+                <fmt:message key="action.signout"/></button>
+            <a href="${pageContext.servletContext.contextPath}/file/list"><fmt:message key="file.list"/></a>
         </c:otherwise>
     </c:choose>
 

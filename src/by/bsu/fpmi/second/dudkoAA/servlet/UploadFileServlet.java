@@ -1,7 +1,7 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
 import by.bsu.fpmi.second.dudkoAA.model.File;
-import by.bsu.fpmi.second.dudkoAA.service.FileBC;
+import by.bsu.fpmi.second.dudkoAA.service.FileService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,28 +10,51 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
-import java.io.*;
-import java.text.MessageFormat;
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import static java.text.MessageFormat.format;
+
+/**
+ * Servlet using for uploading files.
+ */
 @MultipartConfig
 public class UploadFileServlet extends HttpServlet {
-    private final static int BUFFER_SIZE = 2048;
 
-    private final static int MAX_CHARACTERS = 300;
+    /** The size in bytes of buffer for uploading files. */
+    private static final int BUFFER_SIZE = 2048;
 
-    private final static int MIN_CHARACTERS = 1;
+    /** Maximum number of characters in input field. */
+    private static final int MAX_CHARACTERS = 300;
 
+    /** Minimum number of characters in input field. */
+    private static final int MIN_CHARACTERS = 1;
+
+    /** The path to upload files on server. */
     private String filePath;
 
+    /** Initializes the path to files on server. */
     public void init() {
         filePath = "C:" + java.io.File.separator + "Temp";
     }
 
+    /**
+     * Checks the action in the form was chosen:
+     * upload or cancel - and follows it.
+     * @param request request with the information about
+     *                action was chosen
+     * @param response response to the request
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(final HttpServletRequest request,
+                          final HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if (action.equals("upload")) {
             uploadFile(request, response);
@@ -40,16 +63,23 @@ public class UploadFileServlet extends HttpServlet {
         }
     }
 
-    private void uploadFile(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    /**
+     * Checks if the request is correct and uploads file to the server.
+     * @param request request with the info about file to upload
+     * @param response response to the request
+     * @throws IOException
+     * @throws ServletException
+     */
+    private void uploadFile(final HttpServletRequest request,
+                            final HttpServletResponse response) throws IOException, ServletException {
         List<String> messages = getRequestErrors(request);
         String jspToForward;
-        if (!messages.isEmpty()){
+        if (!messages.isEmpty()) {
             request.setAttribute("messages", messages);
             jspToForward = "/addFile.jsp";
-        }
-        else {
+        } else {
             File file = makeFileObject(request, createFileOnServer(request.getPart("file")));
-            FileBC.getInstance().addFile(file);
+            FileService.getInstance().addFile(file);
             updateRequestWithInfoForLinks(request, file);
             jspToForward = "/successfulUpload.jsp";
         }
@@ -57,7 +87,14 @@ public class UploadFileServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
-    private String createFileOnServer(Part filePart) throws IOException, ServletException {
+    /**
+     * Creates and loads file to the server.
+     * @param filePart a part file of request
+     * @return the name of uploaded file
+     * @throws IOException
+     * @throws ServletException
+     */
+    private String createFileOnServer(final Part filePart) throws IOException, ServletException {
         InputStream inputStream = filePart.getInputStream();
         String fileName = getFileName(filePart);
         java.io.File file = new java.io.File(filePath + java.io.File.separator + fileName);
@@ -68,7 +105,14 @@ public class UploadFileServlet extends HttpServlet {
         return fileName;
     }
 
-    private void loadFileContent(InputStream inputStream, BufferedOutputStream bufferedOutputStream) throws IOException {
+    /**
+     * Loads the content of file from input to output stream.
+     * @param inputStream input stream from the source of file
+     * @param bufferedOutputStream output stream for uploading file
+     * @throws IOException
+     */
+    private void loadFileContent(final InputStream inputStream,
+                                 final BufferedOutputStream bufferedOutputStream) throws IOException {
         byte[] buffer = new byte[BUFFER_SIZE];
         int bytesRead = inputStream.read(buffer);
         while (bytesRead > 0) {
@@ -78,7 +122,12 @@ public class UploadFileServlet extends HttpServlet {
         bufferedOutputStream.flush();
     }
 
-    private String getFileName(Part part) {
+    /**
+     * Gets the name of file form its part in request.
+     * @param part file part of request
+     * @return the name of uploading file
+     */
+    private String getFileName(final Part part) {
         String[] contentAttributes = part.getHeader("content-disposition").split(";");
         for (String attribute : contentAttributes) {
             if (attribute.trim().startsWith("filename")) {
@@ -89,12 +138,22 @@ public class UploadFileServlet extends HttpServlet {
         return null;
     }
 
+    /**
+     * Adds attributes to the request
+     * @param request request to be updated
+     * @param file file with the info for the links
+     */
     private void updateRequestWithInfoForLinks(HttpServletRequest request, File file) {
         request.setAttribute("fileID", file.getId());
         request.setAttribute("removeCode", file.getRemoveCode());
     }
 
-    private File makeFileObject(HttpServletRequest request, String fileName) {
+    /**
+     * Creates File object according to the information in request.
+     * @param request request with uploading file information
+     * @return file object
+     */
+    private File makeFileObject(final HttpServletRequest request, final String fileName) {
         File file = new File();
         file.setDescription(request.getParameter("fileDescription"));
         file.setAuthor(request.getParameter("fileAuthor"));
@@ -104,40 +163,46 @@ public class UploadFileServlet extends HttpServlet {
         return file;
     }
 
-    private List<String> getRequestErrors(HttpServletRequest request) {
+    /**
+     * Checks the information about the file in request and adds
+     * error messages to errors.
+     * @param request request with entered by user file information
+     * @return the list of error messages
+     */
+    private List<String> getRequestErrors(final HttpServletRequest request) throws IOException, ServletException {
         List<String> errors = new ArrayList<>();
         validateFileStringField(request.getParameter("fileDescription"), errors, "file.description");
         validateFileStringField(request.getParameter("fileAuthor"), errors, "file.author");
         validateFileStringField(request.getParameter("fileNotes"), errors, "file.notes");
-        if (request.getParameter("file") == null) {
-            errors.add("File should be chosen");
+        if (request.getPart("file") == null) {
+            errors.add(format(getMessage("error.file.notchosen")));
         }
         return errors;
     }
 
     /**
-     * validate value and add error messages to messages list
+     * Validate value and add error messages to messages list.
      * @param value the value to validate
      * @param errors the messages list
      * @param fieldName the key of field name in properties file
      */
-    private void validateFileStringField(String value, List<String> errors, String fieldName) {
+    private void validateFileStringField(final String value, final List<String> errors, final String fieldName) {
         if (value == null || value.trim().equals("")) {
-            String errorMessage = MessageFormat.format(getMessage("error.empty"), getMessage(fieldName));
+            String errorMessage = format(getMessage("error.empty"), getMessage(fieldName));
             errors.add(errorMessage);
         } else if (value.length() > MAX_CHARACTERS) {
-            String errorMessage = MessageFormat.format(getMessage("error.field.length"),
+            String errorMessage = format(getMessage("error.field.length"),
                     getMessage(fieldName), MIN_CHARACTERS, MAX_CHARACTERS);
             errors.add(errorMessage);
         }
     }
 
     /**
-     * get message from property file
+     * Get message from property file.
      * @param key the key in property file
      * @return the message from property file
      */
-    private String getMessage(String key) {
+    private String getMessage(final String key) {
         ResourceBundle bundle = ResourceBundle.getBundle("messages");
         return bundle.getString(key);
     }

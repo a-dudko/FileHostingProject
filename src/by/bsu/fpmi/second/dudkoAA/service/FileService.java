@@ -61,14 +61,14 @@ public class FileService {
      * Gets file from the file storage by its ID.
      * @param id of file to get
      * @return file with such ID or null
-     * if there if no such file
+     * if there is no such file
      */
     public File getFile(final Integer id) {
         return fileDAO.read(id);
     }
 
     /**
-     * Updates file in file storage,
+     * Updates file in file storage.
      * @param file to update
      */
     public void updateFile(final File file) {
