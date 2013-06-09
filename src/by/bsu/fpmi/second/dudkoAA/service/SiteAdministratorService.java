@@ -1,11 +1,7 @@
 package by.bsu.fpmi.second.dudkoAA.service;
 
-import by.bsu.fpmi.second.dudkoAA.HibernateUtil;
-import by.bsu.fpmi.second.dudkoAA.dao.FileDAO;
 import by.bsu.fpmi.second.dudkoAA.dao.SiteAdministratorDAO;
-import by.bsu.fpmi.second.dudkoAA.model.File;
 import by.bsu.fpmi.second.dudkoAA.model.SiteAdministrator;
-import org.hibernate.Session;
 
 import java.util.List;
 
@@ -15,15 +11,15 @@ import java.util.List;
  * Date: 6.6.13
  * Time: 21.09
  */
-public class SiteAdministratorBC {
+public class SiteAdministratorService {
 
     private SiteAdministratorDAO siteAdministratorDAO = SiteAdministratorDAO.getInstance();
 
-    private static SiteAdministratorBC instance;
+    private static SiteAdministratorService instance;
 
-    public static SiteAdministratorBC getInstance() {
+    public static SiteAdministratorService getInstance() {
         if (instance == null) {
-            instance = new SiteAdministratorBC();
+            instance = new SiteAdministratorService();
         }
         return instance;
     }
