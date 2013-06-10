@@ -10,7 +10,7 @@
             border: 1px solid #1e90ff;
         }
     </style>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="${pageContext.servletContext.contextPath}/scripts/jquery-2.0.2.min.js"></script>
     <script type="text/javascript">
         var removeFunc = function(fileID, fileRemoveCode){
             $.ajax({
@@ -18,11 +18,16 @@
                 url: "${pageContext.servletContext.contextPath}/file/download/id" + fileID,
                 data: {
                     "op" : "remove",
-                    "removecode" : fileRemoveCode
+                    "removecode" : fileRemoveCode,
+                    "ajax" : true
                 },
                 statusCode:{
                     200: function(){
                         $("#row"+fileID).remove();
+                    },
+
+                    500: function(){
+                        alert("<fmt:message key="error.action.failed"/>");
                     }
                 }
             });

@@ -4,8 +4,8 @@
 <html>
 <head>
     <title>Index Page</title>
-    <script type="text/javascript" src="scripts/login-form-validation.js"></script>
-    <link rel="stylesheet" href="styles/post-forms-style.css">
+    <script type="text/javascript" src="${pageContext.servletContext.contextPath}/scripts/login-form-validation.js"></script>
+    <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/styles/post-forms-style.css">
     <fmt:setBundle basename="messages"/>
 </head>
 <body>

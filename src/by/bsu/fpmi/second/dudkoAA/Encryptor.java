@@ -2,7 +2,7 @@ package by.bsu.fpmi.second.dudkoAA;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-/** Class for encrypting passwords. */
+/** Class for encrypting strings. */
 public class Encryptor {
 
     /** Hex-number used for encryption. */
@@ -24,16 +24,16 @@ public class Encryptor {
     }
 
     /**
-     * Encryptes the password using MD5 encryption algorithm.
-     * @param password to be encrypted
-     * @return encrypted password
+     * Encryptes the string using MD5 encryption algorithm.
+     * @param string to be encrypted
+     * @return encrypted string
      * @throws NoSuchAlgorithmException
      */
-    public String getPasswordMD5(final String password) throws NoSuchAlgorithmException {
+    public String getStringMD5(final String string) throws NoSuchAlgorithmException {
         StringBuffer hexString = new StringBuffer();
         MessageDigest messageDigest = MessageDigest.getInstance("MD5");
         String salt = "hg38iu37";
-        messageDigest.update((password + salt).getBytes());
+        messageDigest.update((string + salt).getBytes());
         byte[] digest = messageDigest.digest();
         for (int i = 0; i < digest.length; i++) {
             hexString.append(Integer.toHexString(HEX_CODE & digest[i]));

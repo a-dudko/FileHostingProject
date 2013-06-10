@@ -134,7 +134,7 @@ public class UserSignInServlet extends HttpServlet {
         List<SiteAdministrator> administrators = SiteAdministratorService.getInstance().getProfiles();
         for (SiteAdministrator admin : administrators) {
             if (admin.getLogin().equals(login)) {
-                if (admin.getPassword().equals(Encryptor.getInstance().getPasswordMD5(password))) {
+                if (admin.getPassword().equals(Encryptor.getInstance().getStringMD5(password))) {
                     return true;
                 }
                 return false;

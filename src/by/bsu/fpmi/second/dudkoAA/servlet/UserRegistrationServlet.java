@@ -84,7 +84,7 @@ public class UserRegistrationServlet extends HttpServlet {
         administrator.setLogin(request.getParameter("userLogin"));
         String password = request.getParameter("userPassword");
         try {
-            administrator.setPassword(Encryptor.getInstance().getPasswordMD5(password));
+            administrator.setPassword(Encryptor.getInstance().getStringMD5(password));
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }

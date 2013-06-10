@@ -5,8 +5,10 @@
 <head>
     <fmt:setBundle basename="messages"/>
     <title><fmt:message key="site.upload"/></title>
-    <link rel="stylesheet" href="styles/post-forms-style.css">
-    <script type="text/javascript" src="scripts/upload-form-validation.js"></script>
+    <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/styles/post-forms-style.css">
+    <script type="text/javascript" src="${pageContext.servletContext.contextPath}/scripts/upload-form-validation.js">
+
+    </script>
 </head>
 <body>
     <div id="messages" style="color: red;">
@@ -15,7 +17,7 @@
         </c:forEach>
     </div>
 
-    <form id="fileUploadForm" action="${pageContext.servletContext.contextPath}/file/upload"
+    <form id="fileUploadForm" action="${pageContext.servletContext.contextPath}/file/upload/"
           enctype="multipart/form-data" method="POST">
         <fieldset>
             <legend><fmt:message key="file.legend"/></legend>
@@ -40,6 +42,6 @@
         <button type="button" onclick="submitForm();"><fmt:message key="action.upload"/></button>
         <button type="submit"><fmt:message key="action.cancel"/></button>
     </form>
-    <a href="index.jsp"><fmt:message key="site.main"/></a>
+    <a href="${pageContext.servletContext.contextPath}/index.jsp"><fmt:message key="site.main"/></a>
 </body>
 </html>

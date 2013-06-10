@@ -25,6 +25,9 @@ public class DownloadAndRemoveFileServlet extends HttpServlet {
     /** The code of successful response. */
     private static final int SUCCESS_RESPONSE_CODE = 200;
 
+    /** The code of unsuccessful response. */
+    private static final int FAILURE_RESPONSE_CODE = 500;
+
     /** The path to files on server. */
     private String filePath;
 
@@ -70,7 +73,11 @@ public class DownloadAndRemoveFileServlet extends HttpServlet {
         if (isRemoveCodeRight(request, fileFromDB)) {
             FileService.getInstance().removeFile(fileFromDB);
             response.setStatus(SUCCESS_RESPONSE_CODE);
+            if (request.getParameter("ajax") == null) {
+                response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "/index.jsp"));
+            }
         } else {
+            response.setStatus(FAILURE_RESPONSE_CODE);
             wrongURIForward(request, response, format(getMessage("error.removecode.wrong")));
         }
     }

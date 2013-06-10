@@ -35,6 +35,9 @@ public class UploadFileServlet extends HttpServlet {
     /** Minimum number of characters in input field. */
     private static final int MIN_CHARACTERS = 1;
 
+    /** The number of max bytes file size. */
+    private static final int MAX_FILE_SIZE = 50000000;
+
     /** The path to upload files on server. */
     private String filePath;
 
@@ -174,8 +177,11 @@ public class UploadFileServlet extends HttpServlet {
         validateFileStringField(request.getParameter("fileDescription"), errors, "file.description");
         validateFileStringField(request.getParameter("fileAuthor"), errors, "file.author");
         validateFileStringField(request.getParameter("fileNotes"), errors, "file.notes");
-        if (request.getPart("file") == null) {
+        Part filePart = request.getPart("file");
+        if (filePart == null) {
             errors.add(format(getMessage("error.file.notchosen")));
+        } else if (filePart.getSize() > MAX_FILE_SIZE) {
+            errors.add(format(getMessage("error.file.size")));
         }
         return errors;
     }
