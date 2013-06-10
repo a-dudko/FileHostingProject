@@ -12,22 +12,7 @@ import java.util.List;
 public class SiteAdministratorService {
 
     /** Administrators storage class instance. */
-    private SiteAdministratorDAO siteAdministratorDAO = SiteAdministratorDAO.getInstance();
-
-    /** Instance of this class object. */
-    private static SiteAdministratorService instance;
-
-    /**
-     * Get the instance of this class and create it
-     * if it hasn't been created yet.
-     * @return the instance of class
-     */
-    public static SiteAdministratorService getInstance() {
-        if (instance == null) {
-            instance = new SiteAdministratorService();
-        }
-        return instance;
-    }
+    private SiteAdministratorDAO siteAdministratorDAO = new SiteAdministratorDAO();
 
     /**
      * Adds the admin to the admins storage.

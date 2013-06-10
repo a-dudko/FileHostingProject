@@ -14,6 +14,9 @@ import java.io.IOException;
  */
 public class FilesListServlet extends HttpServlet {
 
+    /** Files storage class instance. */
+    private FileDAO fileDAO = new FileDAO();
+
     /**
      * If current user is administrator, the list of files
      * on server is shown, for the usual user this page
@@ -25,10 +28,10 @@ public class FilesListServlet extends HttpServlet {
      * @throws IOException
      */
     @Override
-    protected void service(final HttpServletRequest request,
+    protected void doGet(final HttpServletRequest request,
                            final HttpServletResponse response) throws ServletException, IOException {
         if (request.getSession().getAttribute("currentUser") != null) {
-            request.setAttribute("filesList", FileDAO.getInstance().readAll());
+            request.setAttribute("filesList", fileDAO.readAll());
             RequestDispatcher reqDispatcher = getServletConfig().getServletContext().getRequestDispatcher("/filesList.jsp");
             reqDispatcher.forward(request, response);
         } else {

@@ -1,5 +1,6 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
+import by.bsu.fpmi.second.dudkoAA.FormItemsValidator;
 import by.bsu.fpmi.second.dudkoAA.model.File;
 import by.bsu.fpmi.second.dudkoAA.service.FileService;
 
@@ -31,9 +32,15 @@ public class DownloadAndRemoveFileServlet extends HttpServlet {
     /** The path to files on server. */
     private String filePath;
 
+    /** Service for interaction with files storage. */
+    private FileService fileService = new FileService();
+
+    /** Checker for input fields. */
+    private FormItemsValidator validator = new FormItemsValidator();
+
     /** Initializes the path to files on server. */
     public void init() {
-        filePath = "C:" + java.io.File.separator + "Temp";
+        filePath = validator.getMessage("server.file.path");
     }
 
     /**
@@ -71,7 +78,7 @@ public class DownloadAndRemoveFileServlet extends HttpServlet {
     private void removeFile(final HttpServletRequest request, final HttpServletResponse response,
                             final File fileFromDB) throws IOException, ServletException {
         if (isRemoveCodeRight(request, fileFromDB)) {
-            FileService.getInstance().removeFile(fileFromDB);
+            fileService.removeFile(fileFromDB);
             response.setStatus(SUCCESS_RESPONSE_CODE);
             if (request.getParameter("ajax") == null) {
                 response.sendRedirect(response.encodeRedirectURL(request.getContextPath() + "/index.jsp"));
@@ -147,7 +154,7 @@ public class DownloadAndRemoveFileServlet extends HttpServlet {
         }
         StringBuilder idPart = new StringBuilder(uriParts[i]);
         int fileID = Integer.parseInt(idPart.substring(2, idPart.length()));
-        return FileService.getInstance().getFile(fileID);
+        return fileService.getFile(fileID);
     }
 
     /**

@@ -1,5 +1,6 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
+import by.bsu.fpmi.second.dudkoAA.FormItemsValidator;
 import by.bsu.fpmi.second.dudkoAA.model.File;
 import by.bsu.fpmi.second.dudkoAA.service.FileService;
 
@@ -29,21 +30,21 @@ public class UploadFileServlet extends HttpServlet {
     /** The size in bytes of buffer for uploading files. */
     private static final int BUFFER_SIZE = 2048;
 
-    /** Maximum number of characters in input field. */
-    private static final int MAX_CHARACTERS = 300;
-
-    /** Minimum number of characters in input field. */
-    private static final int MIN_CHARACTERS = 1;
-
     /** The number of max bytes file size. */
     private static final int MAX_FILE_SIZE = 50000000;
 
     /** The path to upload files on server. */
     private String filePath;
 
+    /** Service for interaction with files storage. */
+    private FileService fileService = new FileService();
+
+    /** Checker for input fields. */
+    private FormItemsValidator validator = new FormItemsValidator();
+
     /** Initializes the path to files on server. */
     public void init() {
-        filePath = "C:" + java.io.File.separator + "Temp";
+        filePath = validator.getMessage("server.file.path");
     }
 
     /**
@@ -82,7 +83,7 @@ public class UploadFileServlet extends HttpServlet {
             jspToForward = "/addFile.jsp";
         } else {
             File file = makeFileObject(request, createFileOnServer(request.getPart("file")));
-            FileService.getInstance().addFile(file);
+            fileService.addFile(file);
             updateRequestWithInfoForLinks(request, file);
             jspToForward = "/successfulUpload.jsp";
         }
@@ -174,42 +175,15 @@ public class UploadFileServlet extends HttpServlet {
      */
     private List<String> getRequestErrors(final HttpServletRequest request) throws IOException, ServletException {
         List<String> errors = new ArrayList<>();
-        validateFileStringField(request.getParameter("fileDescription"), errors, "file.description");
-        validateFileStringField(request.getParameter("fileAuthor"), errors, "file.author");
-        validateFileStringField(request.getParameter("fileNotes"), errors, "file.notes");
+        validator.validateFileStringField(request.getParameter("fileDescription"), errors, "file.description");
+        validator.validateFileStringField(request.getParameter("fileAuthor"), errors, "file.author");
+        validator.validateFileStringField(request.getParameter("fileNotes"), errors, "file.notes");
         Part filePart = request.getPart("file");
         if (filePart == null) {
-            errors.add(format(getMessage("error.file.notchosen")));
+            errors.add(format(validator.getMessage("error.file.notchosen")));
         } else if (filePart.getSize() > MAX_FILE_SIZE) {
-            errors.add(format(getMessage("error.file.size")));
+            errors.add(format(validator.getMessage("error.file.size")));
         }
         return errors;
-    }
-
-    /**
-     * Validate value and add error messages to messages list.
-     * @param value the value to validate
-     * @param errors the messages list
-     * @param fieldName the key of field name in properties file
-     */
-    private void validateFileStringField(final String value, final List<String> errors, final String fieldName) {
-        if (value == null || value.trim().equals("")) {
-            String errorMessage = format(getMessage("error.empty"), getMessage(fieldName));
-            errors.add(errorMessage);
-        } else if (value.length() > MAX_CHARACTERS) {
-            String errorMessage = format(getMessage("error.field.length"),
-                    getMessage(fieldName), MIN_CHARACTERS, MAX_CHARACTERS);
-            errors.add(errorMessage);
-        }
-    }
-
-    /**
-     * Get message from property file.
-     * @param key the key in property file
-     * @return the message from property file
-     */
-    private String getMessage(final String key) {
-        ResourceBundle bundle = ResourceBundle.getBundle("messages");
-        return bundle.getString(key);
     }
 }

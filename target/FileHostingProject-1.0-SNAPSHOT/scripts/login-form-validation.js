@@ -16,7 +16,7 @@ function validateUserLoginForm() {
     }
     else
     if (!loginElement.value.match(/[a-zA-Z0-9]+/)) {
-        errorMessages.push("<br>Login should consist of numbers and letters only");
+        errorMessages.push("<br>Login should consist of English numbers and letters only");
         loginElement.style.backgroundColor = "pink";
     }
 

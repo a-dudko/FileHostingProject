@@ -12,22 +12,7 @@ import java.util.List;
 public class FileService {
 
     /** Files storage class instance. */
-    private FileDAO fileDAO = FileDAO.getInstance();
-
-    /** Instance of this class object. */
-    private static FileService instance;
-
-    /**
-     * Get the instance of this class and create it
-     * if it hasn't been created yet.
-     * @return the instance of class
-     */
-    public static FileService getInstance() {
-        if (instance == null) {
-            instance = new FileService();
-        }
-        return instance;
-    }
+    private FileDAO fileDAO = new FileDAO();
 
     /**
      * Adds the file to the file storage.

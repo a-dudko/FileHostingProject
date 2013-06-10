@@ -1,6 +1,7 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
 import by.bsu.fpmi.second.dudkoAA.Encryptor;
+import by.bsu.fpmi.second.dudkoAA.FormItemsValidator;
 import by.bsu.fpmi.second.dudkoAA.model.SiteAdministrator;
 import by.bsu.fpmi.second.dudkoAA.service.SiteAdministratorService;
 
@@ -20,14 +21,14 @@ import static java.text.MessageFormat.format;
 /** Servlet used for registering the administrators. */
 public class UserRegistrationServlet extends HttpServlet {
 
-    /** Maximum number of characters in input field. */
-    private static final int MAX_CHARACTERS = 300;
-
-    /** Minimum number of characters in input field. */
-    private static final int MIN_CHARACTERS = 6;
-
     /** Code given for users to verify their rights for registration. */
     private static final String ADMIN_CODE = "LIDA1323";
+
+    /** Checker for input fields. */
+    private FormItemsValidator validator = new FormItemsValidator();
+
+    /** Service for interaction with files storage. */
+    private SiteAdministratorService administratorService = new SiteAdministratorService();
 
     /**
      * Checks the action in the form was chosen:
@@ -67,7 +68,7 @@ public class UserRegistrationServlet extends HttpServlet {
             jspToForward = "/registration.jsp";
         } else {
             SiteAdministrator administrator = makeSiteAdministratorObject(request);
-            SiteAdministratorService.getInstance().addAdministrator(administrator);
+            administratorService.addAdministrator(administrator);
             jspToForward = "/index.jsp";
         }
         RequestDispatcher dispatcher = request.getRequestDispatcher(jspToForward);
@@ -84,7 +85,7 @@ public class UserRegistrationServlet extends HttpServlet {
         administrator.setLogin(request.getParameter("userLogin"));
         String password = request.getParameter("userPassword");
         try {
-            administrator.setPassword(Encryptor.getInstance().getStringMD5(password));
+            administrator.setPassword(Encryptor.getStringMD5(password));
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
@@ -99,10 +100,10 @@ public class UserRegistrationServlet extends HttpServlet {
      */
     private List<String> getRequestErrors(final HttpServletRequest request) {
         List<String> errors = new ArrayList<>();
-        validateUserStringField(errors, request.getParameter("userLogin"), "user.login");
+        validator.validateUserStringField(errors, request.getParameter("userLogin"), "user.login");
 
         String password = request.getParameter("userPassword");
-        if (isLengthCorrect(errors, password, "user.password")) {
+        if (validator.isLengthCorrect(errors, password, "user.password")) {
             String repeatPassword = request.getParameter("userRepPassword");
             if (!password.equals(repeatPassword)) {
                 String errorMessage = format(getMessage("error.passwords.notequal"));
@@ -115,7 +116,7 @@ public class UserRegistrationServlet extends HttpServlet {
             errors.add(errorMessage);
         }
 
-        validateUserStringField(errors, request.getParameter("adminCode"), "user.admincode");
+        validator.validateUserStringField(errors, request.getParameter("adminCode"), "user.admincode");
 
         if (!ADMIN_CODE.equals(request.getParameter("adminCode"))) {
             String errorMessage = format(getMessage("error.admincode"));
@@ -124,55 +125,7 @@ public class UserRegistrationServlet extends HttpServlet {
         return errors;
     }
 
-    /**
-     * Checks the length of field value and its characters
-     * consistence.
-     * @param errors errors of user input strings
-     * @param fieldName name of validated field
-     * @param fieldValue value of validated field
-     */
-    private void validateUserStringField(final List<String> errors,
-                                         final String fieldValue, final String fieldName) {
-        isLengthCorrect(errors, fieldValue, fieldName);
-        isConsistsOfLettersAndNumbers(errors, fieldValue, fieldName);
-    }
 
-     /**
-     * Checks if the field value consists of letters
-     * and numbers only and adds error messages to errors.
-     * @param errors errors of user input strings
-     * @param fieldName name of validated field
-     * @param fieldValue value of validated field
-     * @return if field value is correct
-     */
-    private boolean isConsistsOfLettersAndNumbers(final List<String> errors,
-                                                  final String fieldValue, final String fieldName) {
-        if (!fieldValue.matches("[0-9A-Za-z]+")) {
-            String errorMessage = format(getMessage("error.field.letandnum"), getMessage(fieldName));
-            errors.add(errorMessage);
-            return false;
-        }
-        return true;
-    }
-
-    /**
-     * Checks the length of field value and adds error messages
-     * to errors.
-     * @param errors errors of user input strings
-     * @param fieldValue value of checked field
-     * @param fieldName name of checked field
-     * @return if field value is correct
-     */
-    private boolean isLengthCorrect(final List<String> errors, final String fieldValue, final String fieldName) {
-        int fieldValueLength = fieldValue.length();
-        if (fieldValueLength > MAX_CHARACTERS || fieldValueLength < MIN_CHARACTERS) {
-            String errorMessage = format(getMessage("error.field.length"),
-                    getMessage(fieldName), MIN_CHARACTERS, MAX_CHARACTERS);
-            errors.add(errorMessage);
-            return false;
-        }
-        return true;
-    }
 
     /**
      * Checks the existence of such login in DB.
@@ -180,7 +133,7 @@ public class UserRegistrationServlet extends HttpServlet {
      * @return if such login is already exists in DB.
      */
     private boolean isLoginExists(final String login) {
-        List<SiteAdministrator> administrators = SiteAdministratorService.getInstance().getProfiles();
+        List<SiteAdministrator> administrators = administratorService.getProfiles();
         for (SiteAdministrator admin : administrators) {
             if (admin.getLogin().equals(login)) {
                 return true;
