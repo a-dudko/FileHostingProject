@@ -1,6 +1,7 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
 import by.bsu.fpmi.second.dudkoAA.FormItemsValidator;
+import by.bsu.fpmi.second.dudkoAA.Messager;
 import by.bsu.fpmi.second.dudkoAA.model.File;
 import by.bsu.fpmi.second.dudkoAA.service.FileService;
 
@@ -44,7 +45,7 @@ public class UploadFileServlet extends HttpServlet {
 
     /** Initializes the path to files on server. */
     public void init() {
-        filePath = validator.getMessage("server.file.path");
+        filePath = Messager.getMessage("server.file.path");
     }
 
     /**
@@ -180,9 +181,9 @@ public class UploadFileServlet extends HttpServlet {
         validator.validateFileStringField(request.getParameter("fileNotes"), errors, "file.notes");
         Part filePart = request.getPart("file");
         if (filePart == null) {
-            errors.add(format(validator.getMessage("error.file.notchosen")));
+            errors.add(format(Messager.getMessage("error.file.notchosen")));
         } else if (filePart.getSize() > MAX_FILE_SIZE) {
-            errors.add(format(validator.getMessage("error.file.size")));
+            errors.add(format(Messager.getMessage("error.file.size")));
         }
         return errors;
     }

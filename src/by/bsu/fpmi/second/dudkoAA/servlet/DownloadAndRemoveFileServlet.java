@@ -1,6 +1,7 @@
 package by.bsu.fpmi.second.dudkoAA.servlet;
 
 import by.bsu.fpmi.second.dudkoAA.FormItemsValidator;
+import by.bsu.fpmi.second.dudkoAA.Messager;
 import by.bsu.fpmi.second.dudkoAA.model.File;
 import by.bsu.fpmi.second.dudkoAA.service.FileService;
 
@@ -40,7 +41,7 @@ public class DownloadAndRemoveFileServlet extends HttpServlet {
 
     /** Initializes the path to files on server. */
     public void init() {
-        filePath = validator.getMessage("server.file.path");
+        filePath = Messager.getMessage("server.file.path");
     }
 
     /**
